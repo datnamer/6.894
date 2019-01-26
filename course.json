@@ -3,14 +3,14 @@
 		{
 			"assignment": [
 				{
-					"github": "tarfahalrashed"
+					"github": "tarfahalrashed",
+					"title": "A1",
+					"due": "2/13"
 				}
 			],
-			"reading": [
-				{
-					"github": "tarfahalrashed"
-				}
-			]
+			"reading": [],
+			"date": "2/6",
+			"topic": "Introduction"
 		}
 	],
 	"grading": {
