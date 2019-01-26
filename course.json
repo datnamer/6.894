@@ -1,3 +1,22 @@
 {
-	"intro": "test"
+	"intro": "testwerwer",
+	"lecture": [
+		{
+			"assignment": [
+				{
+					"github": "tarfahalrashed"
+				}
+			],
+			"reading": [
+				{
+					"github": "tarfahalrashed"
+				}
+			]
+		}
+	],
+	"grading": {
+		"category": [
+			{}
+		]
+	}
 }
