@@ -10,7 +10,26 @@
 			],
 			"reading": [],
 			"date": "2/6",
-			"topic": "Introduction"
+			"topic": "Introduction : Value of Visualization"
+		},
+		{
+			"date": "2/11",
+			"topic": "Data & Image Models",
+			"assignment": [],
+			"reading": [
+				{
+					"required": "Optional?",
+					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman."
+				},
+				{
+					"required": "???",
+					"title": "Nested Model. Munzner."
+				},
+				{
+					"required": "??",
+					"title": "Design & Redesign. Wattenberg & Viegas."
+				}
+			]
 		}
 	],
 	"grading": {
