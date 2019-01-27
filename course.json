@@ -34,7 +34,34 @@
 	],
 	"grading": {
 		"category": [
-			{}
+			{
+				"title": "Class Participation",
+				"percentage": "10%"
+			},
+			{
+				"title": "Reading Commentaries",
+				"percentage": "10%"
+			},
+			{
+				"title": "A1",
+				"percentage": "5%"
+			},
+			{
+				"title": "A2",
+				"percentage": "10%"
+			},
+			{
+				"title": "A3",
+				"percentage": "20%"
+			},
+			{
+				"title": "A3 Peer Eval",
+				"percentage": "5%"
+			},
+			{
+				"title": "Final Project",
+				"percentage": "40%"
+			}
 		]
 	}
 }
