@@ -5,7 +5,8 @@
 				{
 					"github": "tarfahalrashed",
 					"title": "A1",
-					"due": "2/13"
+					"due": "2/13",
+					"url": "./A1.html"
 				}
 			],
 			"reading": [],
@@ -18,23 +19,204 @@
 			"assignment": [],
 			"reading": [
 				{
-					"required": "Optional?",
 					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman."
 				},
 				{
-					"required": "???",
 					"title": "Nested Model. Munzner."
 				},
 				{
-					"required": "??",
 					"title": "Design & Redesign. Wattenberg & Viegas."
 				}
 			]
+		},
+		{
+			"date": "2/13",
+			"topic": "Visual Encodings w/Altair & Vega-Lite",
+			"assignment": [
+				{
+					"title": "A2",
+					"due": "2/27"
+				}
+			],
+			"reading": [
+				{
+					"title": "Nested Model. Munzner."
+				}
+			]
+		},
+		{
+			"date": "2/19",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Enterprise Data Analysis and Visualization. Kandel et al."
+				}
+			]
+		},
+		{
+			"date": "2/20",
+			"topic": "Wrangling + EDA w/Tableau",
+			"assignment": [
+				{
+					"title": "A3",
+					"due": "3/13"
+				}
+			],
+			"reading": [
+				{
+					"title": "Voyager. Wongsuphasawat et al."
+				}
+			]
+		},
+		{
+			"date": "2/25",
+			"topic": "Design for Perception",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "39 Studies about Human Perception in 30 minutes. Kennedy Elliott.",
+					"url": "https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73"
+				}
+			]
+		},
+		{
+			"date": "2/27",
+			"topic": "Guest Lecture: Hendrik Strobelt, Intro to D3.js",
+			"assignment": [],
+			"reading": []
+		},
+		{
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Direct Manipulation Interfaces. Hutchins, et al. "
+				}
+			],
+			"date": "3/4"
+		},
+		{
+			"date": "3/6",
+			"topic": "Vega-Lite Selections, Reactive Vega, D3 Event Handling",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Exploring and Finding Information. Pirolli."
+				}
+			]
+		},
+		{
+			"date": "3/11",
+			"topic": "Animation",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Animation: Can It Facilitate? Tversky."
+				}
+			]
+		},
+		{
+			"date": "3/13",
+			"topic": "Color",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Color Use Guidelines for Data Representation. Brewer. ",
+					"url": "http://www.personal.psu.edu/cab38/ColorSch/ASApaper.html"
+				}
+			]
+		},
+		{
+			"date": "3/18",
+			"topic": "A3 Demos",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Design & Redesign. Viegas & Wattenberg. ",
+					"url": "https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9"
+				}
+			]
+		},
+		{
+			"date": "3/20",
+			"topic": "A3 Demos / Redesign Exercise",
+			"assignment": [],
+			"reading": []
+		},
+		{
+			"date": "4/1",
+			"topic": "Narrative + Beliefs",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "Visualization Rhetoric. Hullman & Diakopoulos"
+				}
+			]
+		},
+		{
+			"date": "4/3",
+			"topic": "Error & Uncertainty",
+			"assignment": [],
+			"reading": [
+				{
+					"title": "When(Ish) is My Bus? Kay et al."
+				}
+			]
+		},
+		{
+			"date": "4/8",
+			"topic": "Mapping & Cartography",
+			"assignment": [],
+			"reading": []
+		},
+		{
+			"date": "4/10",
+			"topic": "Text Visualization",
+			"assignment": [],
+			"reading": []
+		},
+		{
+			"date": "4/17",
+			"topic": "Final Project Check In w/Staff",
+			"assignment": [],
+			"reading": []
+		},
+		{
+			"date": "4/22, 24",
+			"topic": "Final Project MVP Presentations",
+			"assignment": [],
+			"reading": []
 		}
 	],
 	"grading": {
 		"category": [
-			{}
+			{
+				"title": "Class Participation",
+				"percentage": "10%"
+			},
+			{
+				"title": "Reading Commentaries",
+				"percentage": "10%"
+			},
+			{
+				"title": "A1",
+				"percentage": "5%"
+			},
+			{
+				"title": "A2",
+				"percentage": "10%"
+			},
+			{
+				"title": "A3",
+				"percentage": "20%"
+			},
+			{
+				"title": "A3 Peer Eval",
+				"percentage": "5%"
+			},
+			{
+				"title": "Final Project",
+				"percentage": "40%"
+			}
 		]
 	}
 }
