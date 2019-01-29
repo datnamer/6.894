@@ -101,6 +101,104 @@
 				}
 			],
 			"date": "3/4"
+		},
+		{
+			"date": "3/6",
+			"topic": "Vega-Lite Selections, Reactive Vega, D3 Event Handling",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "Exploring and Finding Information. Pirolli."
+				}
+			]
+		},
+		{
+			"date": "3/11",
+			"topic": "Animation",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "Animation: Can It Facilitate? Tversky."
+				}
+			]
+		},
+		{
+			"date": "3/13",
+			"topic": "Color",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "Color Use Guidelines for Data Representation. Brewer. ",
+					"url": "http://www.personal.psu.edu/cab38/ColorSch/ASApaper.html"
+				}
+			]
+		},
+		{
+			"date": "3/18",
+			"topic": "A3 Demos",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "Design & Redesign. Viegas & Wattenberg. ",
+					"url": "https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9"
+				}
+			]
+		},
+		{
+			"date": "3/20",
+			"topic": "A3 Demos / Redesign Exercise",
+			"assignment": [
+				{}
+			],
+			"reading": []
+		},
+		{
+			"date": "4/1",
+			"topic": "Narrative + Beliefs",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "Visualization Rhetoric. Hullman & Diakopoulos"
+				}
+			]
+		},
+		{
+			"date": "4/3",
+			"topic": "Error & Uncertainty",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{
+					"title": "When(Ish) is My Bus? Kay et al."
+				}
+			]
+		},
+		{
+			"date": "4/8",
+			"topic": "Mapping & Cartography",
+			"assignment": [
+				{}
+			],
+			"reading": []
+		},
+		{
+			"date": "4/10",
+			"topic": "Text Visualization",
+			"assignment": [
+				{}
+			],
+			"reading": []
 		}
 	],
 	"grading": {
