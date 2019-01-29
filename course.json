@@ -19,15 +19,12 @@
 			"assignment": [],
 			"reading": [
 				{
-					"required": "Optional?",
 					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman."
 				},
 				{
-					"required": "???",
 					"title": "Nested Model. Munzner."
 				},
 				{
-					"required": "??",
 					"title": "Design & Redesign. Wattenberg & Viegas."
 				}
 			]
@@ -53,7 +50,9 @@
 				{}
 			],
 			"reading": [
-				{}
+				{
+					"title": "Enterprise Data Analysis and Visualization. Kandel et al."
+				}
 			]
 		},
 		{
@@ -66,7 +65,9 @@
 				}
 			],
 			"reading": [
-				{}
+				{
+					"title": "Voyager. Wongsuphasawat et al."
+				}
 			]
 		},
 		{
@@ -76,7 +77,9 @@
 				{}
 			],
 			"reading": [
-				{}
+				{
+					"title": "39 Studies about Human Perception in 30 minutes. Kennedy Elliott. https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73"
+				}
 			]
 		},
 		{
@@ -85,17 +88,18 @@
 			"assignment": [
 				{}
 			],
-			"reading": [
-				{}
-			]
+			"reading": []
 		},
 		{
 			"assignment": [
 				{}
 			],
 			"reading": [
-				{}
-			]
+				{
+					"title": "Direct Manipulation Interfaces. Hutchins, et al. "
+				}
+			],
+			"date": "3/4"
 		}
 	],
 	"grading": {
