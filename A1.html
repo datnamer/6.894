@@ -445,7 +445,7 @@ h2 {
   <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
     <div id="header" class="pure-g">
         <div class="pure-u-1 pure-u-md-1-2">
-          <a id="wordmark" href="http://vis.csail.mit.edu">
+          <a id="wordmark" href="./index.html">
             <div id="logo">
               <!--?xml version="1.0" encoding="utf-8"?-->
               <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -520,99 +520,52 @@ h2 {
   <p property='intro' mv-edit-placeholder="(course intro)"></p>
   
 
-  <div class="row">
-    <div class="blog-card">
-      <div class="meta">
-        <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
-        <ul class="details">
-          <li><a href="#">OH: </a></li>
-          <li>Office: </li>
-          <li>Contact: <a href="mailto:soya@mit.edu"></a></li>
-        </ul>
-      </div>
-      <div class="description">
-        <h1>Arvind Satyanarayan</h1>
-        <h2>Instructor</h2>
-        <p> </p>
-        <p class="read-more">
-          <a href="#">Learn More</a>
-        </p>
-      </div>
-    </div>
-    <div class="blog-card alt">
-      <div class="meta">
-        <div class="photo" style="background-image: url(imgs/headshot.JPG)"></div>
-        <ul class="details">
-          <li><a href="#">OH: </a></li>
-          <li>Office: 32-G580</li>
-          <li>Contact: <a href="mailto:soya@mit.edu">soya@mit.edu</a></li>
-        </ul>
-      </div>
-      <div class="description">
-        <h1>Soya Park</h1>
-        <h2>TA</h2>
-        <p></p>
-        <p class="read-more">
-          <a href="http://people.csail.mit.edu/soya/">Learn More</a>
-        </p>
-      </div>
-    </div>
-  </div>
 
 
   <br>
-  <b> Schedule & Readings</b><br>
+  <div class="article" data-spy="scroll" data-target=".navbar">
+      <h1>Assignment 1: Visualization Design</h1>
 
+      <p>In this assignment, you will design a visualization for a small data set and provide a rigorous rationale for your design choices. You should in theory be ready to explain the contribution of <em>every pixel</em> in the display. You are free to use any graphics or charting tool you please - including drafting it by hand. However, you may find it most instructive to create the chart from scratch using a graphics API of your choice.
+      </p>
 
-    <div class="day" id="lec-value" property='lecture' mv-multiple>
-      <div>
-        <span class="date" property="date"></span>
-        <span class="topic" property="topic"></span>
-        <small class="pull-right">
-          <a property="url" href="" class="link link-slides">Slides</a>
-        </small>
-      </div>
-      <div mv-multiple class="assignment" property="assignment">
-        Assigned: <a href="https://github.com/tarfahalrashed" property="github" class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)" data-username="tarfahalrashed" aria-label="Github"></a>
-        <span property="title"></span> <a property="url" href="" class="link link-slides">link</a> (Due: <span property='due'></span>)
-      </div>
-      <ul class="reading">
-        <li mv-multiple property="reading">
-          <a href="https://github.com/tarfahalrashed" property="github" class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)" data-username="tarfahalrashed" aria-label="Github"></a>
-          <small>
-            <span class="topic" property="required"></span>
-            <span property="title"></span><a property="url" href="" class="link link-slides">link</a>
-          </small>
-        </li>
-      </ul>
+      <p>
+        (See <a href="resources.html">Resources</a> for a list of visualization tools.)
+      </p>
+
+      <h2>Data Set: U.S. Population, 1900 vs. 2000</h2>
+
+      <p>Every 10 years, the census bureau documents the demographic make-up of the United States, influencing everything from congressional districting to social services. This dataset contains a high-level summary of census data for two years a century apart: 1900 and 2000. The data is a CSV (comma-separated values) file that describes the U.S. population in terms of year, reported sex (1: male, 2: female), age group (binned into 5 year segments from 0-4 years old up to 90+ years old), and the total count of people per group. There are 38 data points per year, for a total of 76 data points.</p>
+
+      <p>
+        Dataset: <a href="data/census2000.csv">CSV</a><br>
+        Source: <a href="http://ipums.org">U.S. Census Bureau via IPUMS</a>
+      </p>
+
+      <h2>Assignment</h2>
+
+      <p>Your task is to design a static (i.e., single image) visualization that you believe effectively communicates the data and provide a short write-up (no more than 4 paragraphs) describing your design. Start by choosing a question you'd like your visualization to answer. <strong>Design your visualization to answer that question, and use the question as the title of your graphic.</strong></p>
+
+      <p>While you must use the data set given, note that you are free to transform the data as you see fit. Such transforms may include (but are not limited to) log transformation, computing percentages or averages, grouping elements into new categories, or removing unnecessary variables or records. You are also free to incorporate external data as you see fit. Your chart image should be interpretable without recourse to your short write-up. Do not forget to include title, axis labels or legends as needed!</p>
+
+      <p>As different visualizations can emphasize different aspects of a data set, you should document what aspects of the data you are attempting to most effectively communicate. In short, what story are you trying to tell? Just as important, also note which aspects of the data might be obscured or down-played due to your visualization design.</p>
+
+      <p>In your write-up, you should provide a rigorous rationale for your design decisions. Document the visual encodings you used and why they are appropriate for the data and your specific question. These decisions include the choice of visualization type, size, color, scale, and other visual elements, as well as the use of sorting or other data transformations. How do these decisions facilitate effective communication?</p>
+
+      <h2>Grading</h2>
+
+      <p>The assignment score is out of a maximum of 10 points. Historically, the median score on this assignment has been 8.5, which corresponds to an A-. We will determine scores by judging both the soundness of your design and the quality of the write-up. We will also look for consideration of audience, message and intended task. Here are examples of aspects that may lead to point deductions:</p>
+
+      <ul>
+        <li>Use of misleading, unnecessary, or unmotivated graphic elements.
+        </li><li>Missing chart title, axis labels, or data transformation description.
+        </li><li>Missing or incomplete design rationale in write-up.
+        </li><li>Ineffective encodings for your stated goal (e.g., distracting colors, improper data transformation).
+      </li></ul>
+
+      <p>We will reward entries that go above and beyond the assignment requirements to produce effective graphics. Examples may include outstanding visual design, meaningful incorporation of external data to reveal important trends, demonstrating exceptional creativity, or effective annotations or other narrative devices.</p>
+
     </div>
-
-    <br>
-  <b> Grading </b><br><p>
-
-  </p><ul property='grading'>
-   <li mv-multiple property='category'>
-      <span property='title'></span> <span property='percentage'></span>
-    </li>
-  </ul>
-
-  <b> Class Participation </b><br>
-     <p property='participation' mv-edit-placeholder="(Class Participation)"></p>
-  <p>
-
-  <b>Resources</b><br>
-     <p property='resources' mv-edit-placeholder="(resources)"></p>
-  </p>
-
-  <p>
-
-  <b>Acknowledgements</b><br>
-
-  </p><ul>
-   <li> Prof. Jeffery Heer for the course format </li>
-  </ul>
-
-  <button class="mv-login">Login to edit contents</button>
    
   </body>
 </html>
