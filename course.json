@@ -46,9 +46,7 @@
 		},
 		{
 			"date": "2/19",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Enterprise Data Analysis and Visualization. Kandel et al."
@@ -73,9 +71,7 @@
 		{
 			"date": "2/25",
 			"topic": "Design for Perception",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "39 Studies about Human Perception in 30 minutes. Kennedy Elliott.",
@@ -86,15 +82,11 @@
 		{
 			"date": "2/27",
 			"topic": "Guest Lecture: Hendrik Strobelt, Intro to D3.js",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": []
 		},
 		{
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Direct Manipulation Interfaces. Hutchins, et al. "
@@ -105,9 +97,7 @@
 		{
 			"date": "3/6",
 			"topic": "Vega-Lite Selections, Reactive Vega, D3 Event Handling",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Exploring and Finding Information. Pirolli."
@@ -117,9 +107,7 @@
 		{
 			"date": "3/11",
 			"topic": "Animation",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Animation: Can It Facilitate? Tversky."
@@ -129,9 +117,7 @@
 		{
 			"date": "3/13",
 			"topic": "Color",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Color Use Guidelines for Data Representation. Brewer. ",
@@ -142,9 +128,7 @@
 		{
 			"date": "3/18",
 			"topic": "A3 Demos",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Design & Redesign. Viegas & Wattenberg. ",
@@ -155,17 +139,13 @@
 		{
 			"date": "3/20",
 			"topic": "A3 Demos / Redesign Exercise",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": []
 		},
 		{
 			"date": "4/1",
 			"topic": "Narrative + Beliefs",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "Visualization Rhetoric. Hullman & Diakopoulos"
@@ -175,9 +155,7 @@
 		{
 			"date": "4/3",
 			"topic": "Error & Uncertainty",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": [
 				{
 					"title": "When(Ish) is My Bus? Kay et al."
@@ -187,17 +165,13 @@
 		{
 			"date": "4/8",
 			"topic": "Mapping & Cartography",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": []
 		},
 		{
 			"date": "4/10",
 			"topic": "Text Visualization",
-			"assignment": [
-				{}
-			],
+			"assignment": [],
 			"reading": []
 		}
 	],
