@@ -31,6 +31,71 @@
 					"title": "Design & Redesign. Wattenberg & Viegas."
 				}
 			]
+		},
+		{
+			"date": "2/13",
+			"topic": "Visual Encodings w/Altair & Vega-Lite",
+			"assignment": [
+				{
+					"title": "A2",
+					"due": "2/27"
+				}
+			],
+			"reading": [
+				{
+					"title": "Nested Model. Munzner."
+				}
+			]
+		},
+		{
+			"date": "2/19",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{}
+			]
+		},
+		{
+			"date": "2/20",
+			"topic": "Wrangling + EDA w/Tableau",
+			"assignment": [
+				{
+					"title": "A3",
+					"due": "3/13"
+				}
+			],
+			"reading": [
+				{}
+			]
+		},
+		{
+			"date": "2/25",
+			"topic": "Design for Perception",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{}
+			]
+		},
+		{
+			"date": "2/27",
+			"topic": "Guest Lecture: Hendrik Strobelt, Intro to D3.js",
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{}
+			]
+		},
+		{
+			"assignment": [
+				{}
+			],
+			"reading": [
+				{}
+			]
 		}
 	],
 	"grading": {
