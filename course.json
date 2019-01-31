@@ -7,8 +7,7 @@
 					"title": "A1",
 					"due": "2/13",
 					"url": "./A1.html"
-				},
-				{}
+				}
 			],
 			"reading": [],
 			"date": "2/6",
@@ -23,7 +22,8 @@
 					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman."
 				},
 				{
-					"title": "Nested Model. Munzner."
+					"title": "Nested Model. Munzner.",
+					"url": "http://nb.mit.edu/f/51681"
 				},
 				{
 					"title": "Design & Redesign. Wattenberg & Viegas."
