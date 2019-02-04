@@ -1,7 +1,7 @@
 <!-- Author: Soya Park, soya@mit.edu -->
 <html>
   <head>  
-    <title>6.894: Interactive Data Viz (Spring 2019)</title>
+    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
     <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif|PT+Serif" rel="stylesheet">
@@ -11,46 +11,7 @@
     <link rel="stylesheet" href="viz-font.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="blog-card.css">
-    <style>
-    body {
-      font-family: 'Noto Serif', serif;
-      margin: 2rem;
-    }
-
-    a {
-      color: skyblue;
-      cursor: pointer;
-    }
-
-    .mv-bar.mv-ui{
-      display:none;
-    }
-
-    .day {
-      margin-left:10px;
-    }
-
-    /*PEN STYLES*/
-    * {
-      box-sizing: border-box;
-    }
-
-    .row {
-      display:flex;
-    }
-
-    .date {
-      color:skyblue;
-    }
-
-    .assignment {
-      margin-left: 10px;
-    }
-
-    .section-header {
-      font-size: 19px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
   <script type="text/javascript">
     // hide mavo menu when the user is not logged in. 
     $( document ).ready(function() {
@@ -118,7 +79,7 @@
       
             <h1>
               <span style="color:#cc5200;">6.894</span>
-              : Interactive Data Viz
+              : Interactive Data Visualization
             </h1>
           </a>
         </div>
@@ -126,7 +87,6 @@
           <div id="links">
             <span>
               <a href="./" class="selected">Home</a>
-              
             </span>
           </div>
         </div>
@@ -147,7 +107,7 @@
       <div class="description">
         <h1>Arvind Satyanarayan</h1>
         <h2>Instructor</h2>
-        <p>OH: TBA @ 32-G7xx<br>Contact: <a href="mailto:arvindsatya@mit.edu">arvindsatya@mit.edu</a></p>
+        <p>OH: TBA @ 32-G706<br>Contact: <a href="mailto:arvindsatya@mit.edu">arvindsatya@mit.edu</a></p>
       </div>
     </div>
     <div class="blog-card alt">
@@ -170,8 +130,35 @@
 
   <br>
   <b class="section-header"> Schedule & Readings</b><br>
+    <table>
+      <thead>
+        <td>Date</td>
+        <td>Topic</td>
+        <td>Reading</td>
+        <td>Assignment</td>
+      </thead>
+      <tr class="day" id="lec-value" property='lecture' mv-multiple>
+        <td class="date" property="date"></td>
+        <td class="topic" property="topic"></td>
+        <td>
+          <span mv-multiple property="reading">
+              <a href="https://github.com/tarfahalrashed" property="github" class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)" data-username="tarfahalrashed" aria-label="Github"></a>
+              <small>
+                <span class="topic" property="required"></span>
+                <span property="title"></span><a property="url" href="" class="link link-slides">link</a>
+              </small>
+            </span>
+        </td>
+        <td>
+          <div mv-multiple class="assignment" property="assignment">
+            <a href="" property="github" class="github" mv-attribute="data-username" mv-edit-placeholder="(Github username)" data-username="tarfahalrashed" aria-label="Github"></a>
+            <span property="title"></span> <a property="url" href="" class="link link-slides">link</a> (Due: <span property='due'></span>)
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="day" id="lec-value" property='lecture' mv-multiple>
+    <!-- <div class="day" id="lec-value" property='lecture' mv-multiple>
       <div>
         <span class="date" property="date"></span>
         <span class="topic" property="topic"></span>
@@ -192,7 +179,7 @@
           </small>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <br>
   <b class="section-header"> Grading </b><br><p>
@@ -206,10 +193,6 @@
   <b class="section-header"> Class Participation </b><br>
      <p property='participation' mv-edit-placeholder="(Class Participation)"></p>
   <p>
-
-  <b class="section-header">Resources</b><br>
-     <p property='resources' mv-edit-placeholder="(resources)"></p>
-  </p>
 
   <p>
 

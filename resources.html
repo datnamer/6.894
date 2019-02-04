@@ -1,0 +1,455 @@
+<!-- Author: Soya Park, soya@mit.edu -->
+<html>
+  <head>  
+    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|PT+Serif" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="mavo.min.js"></script>
+    <link rel="stylesheet" href="mavo.css">
+    <link rel="stylesheet" href="viz-font.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    // hide mavo menu when the user is not logged in. 
+    $( document ).ready(function() {
+      $('body').bind("mv-load", function() {  
+        if($(".mv-status").text().includes("Logged in to Github as")) 
+          $(".mv-bar.mv-ui").show();
+      });
+    });    
+  </script>
+  </head>
+<!-- https://github.com/mitvis/6.894 -->
+  <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
+    <div id="header" class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <a id="wordmark" href="./index.html">
+            <div id="logo">
+              <!--?xml version="1.0" encoding="utf-8"?-->
+              <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+              <g>
+                <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                  h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+              </g>
+              <g>
+                <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
+                  c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
+              </g>
+              <g>
+                <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                  h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+              </g>
+              <g>
+                <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                  c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                  c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+              </g>
+              <g>
+                <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
+                  c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
+              </g>
+              <g>
+                <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
+                  c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
+              </g>
+              <g>
+                <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
+                  c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
+              </g>
+              <g>
+                <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
+                  h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
+              </g>
+              <g>
+                <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
+                  h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
+              </g>
+              <g>
+                <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
+                  h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
+              </g>
+              </svg>
+            </div>
+      
+            <h1>
+              <span style="color:#cc5200;">6.894</span>
+              : Interactive Data Visualization
+            </h1>
+          </a>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div id="links">
+            <span>
+              <a href="./" class="selected">Home</a>
+            </span>
+          </div>
+        </div>
+      </div>
+  Spring 2019 &#183; MW230 (32-124) &#183; <a href='https://piazza.com/class/jrc6epsrssu1in'>Piazza</a> &#183; <a href='https://stellar.mit.edu/S/course/6/sp19/6.894/'>Stellar</a>
+  <p property='intro' mv-edit-placeholder="(course intro)"></p>
+  
+
+
+
+  <br>
+  <div class="article" data-spy="scroll" data-target=".navbar">
+      <section id="tool">
+          <h1>Tools</h1>
+          <section>
+            <h4>Visualization Toolkits</h4>
+
+            <p>A variety of useful toolkits have been designed to help support information visualization applications. Some include support for the full visualization pipeline from data to interactive graphics, while others focus only on a subset, typically graphics and interaction.</p>
+            <ul>
+              <li>
+                <a href="http://mbostock.github.com/d3">D3</a> - A JavaScript library for data-driven DOM manipulation, interaction and animation. Includes utilities for visualization techniques and SVG generation.
+              </li>
+              <li>
+                <a href="http://vega.github.io/vega">Vega</a> - A declarative language for representing visualizations. Vega will parse a visualization specification to produce a JavaScript-based visualization, using either HTML Canvas or SVG rendering. Vega is particularly useful for creating programs that produce visualizations as output.
+              </li>
+              <li>
+                <a href="http://vega.github.io/vega-lite">Vega-Lite</a> - A high-level visualization grammar that compiles concise specifications to full Vega specifications.
+              </li>
+              <li>
+                <a href="http://processing.org">Processing</a> or <a href="http://p5js.org">p5.js</a> - A popular Java-like graphics and interaction language and IDE. Processing has a strong user community with many examples. p5.js is a sister project for JavaScript.
+              </li>
+              <li>
+                HTML/JavaScript/XML - use standard web technologies to build the visualization. You may use libraries such as <a href="http://jQuery.com">jQuery</a> and the <a href="https://developers.google.com/maps/">Google Maps API</a> to help build your visualization.
+              </li>
+              <li>
+                <a href="http://leafletjs.com/">Leaflet</a> – a popular open-source mapping library
+              </li>
+              <li>
+                <a href="http://www.vtk.org/">VTK</a> - A scientific visualization library (C++ with wrappers for other languages)
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Visualization Tools</h4>
+            <ul>
+              <li>
+                <a href="http://www.tableausoftware.com/student/">Tableau for Students</a> - get a free Tableau license as a student
+              </li>
+              <li>
+                <a href="http://www.tableausoftware.com/public/">Tableau Public</a> - a free version of Tableau which publishes to the web
+              </li>
+              <li>
+                <a href="http://vega.github.io/voyager2">Voyager</a> and <a href="http://vega.github.io/polestar">Polestar</a> – web-based data exploration tools from UW's Interactive Data Lab
+              </li>
+              <li>
+                <a href="http://idl.cs.washington.edu/projects/lyra/">Lyra</a> - an interactive visualization design environment
+              </li>
+              <li>
+                <a href="http://had.co.nz/ggplot2/">GGplot2</a> - a graphics language for <a href="http://www.r-project.org/">R</a>
+              </li>
+              <li>
+                <a href="http://www.ggobi.org/">GGobi</a> - classic system for visualizations of multivariate data
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Network Analysis Tools</h4>
+            <ul>
+              <li>
+                <a href="http://gephi.org/">Gephi</a> - an interactive graph analysis application
+              </li>
+              <li>
+                <a href="http://www.codeplex.com/NodeXL">NodeXL</a> - a graph analysis plug-in for Excel
+              </li>
+              <li>
+                <a href="http://graphexploration.cond.org/">GUESS</a> - a combined visual/scripting interface for graph analysis
+              </li>
+              <li>
+                <a href="http://pajek.imfm.si/doku.php">Pajek</a> - another popular network analysis tool
+              </li>
+              <li>
+                <a href="http://networkx.lanl.gov/">NetworkX</a> - graph analysis library for Python
+              </li>
+              <li>
+                <a href="http://snap.stanford.edu/">SNAP</a> - graph analysis library for C++
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Color Tools</h4>
+            <ul>
+              <li><a href="http://kuler.adobe.com/">kuler</a> - Color Palette Generator</li>
+              <li><a href="http://colorbrewer2.org/">Color Brewer</a>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Web Development Tools</h4>
+            <ul>
+              <li>Beginner? Start with <a href="sublimetext.com">Sublime Text</a> with <a href="http://emmet.io">Emmet</a> and SublimeLinter/JSHint</li>
+              <li>Like IDE and willing to pay? <a href="http://www.jetbrains.com/webstorm/">Webstorm</a> is a good option.</li>
+              <li>
+                <a href="http://kapeli.com/dash">Dash</a> is great for quick documentation look up in Mac.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="tutorial">
+          <h1>Tutorials &amp; Tips</h1>
+          <div class="markdown-body">
+            <p>
+              In addition to our workshops, these tutorials could be useful for your projects and future visualization work.
+            </p>
+
+            <section id="html">
+              <h4>
+                <a name="html-css" class="anchor" href="#html-css">
+                  <span class="octicon octicon-link"></span>
+                </a>HTML, CSS</h4>
+
+              <ul>
+                <li>
+                  Basics:
+
+                  <ul>
+                    <li>
+                      <strong>Mozilla Develop Network (<a href="https://developer.mozilla.org/en-US/learn/html">HTML</a>, <a href="https://developer.mozilla.org/en-US/learn/css">CSS</a>).</strong>
+                    </li>
+                    <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>Extras
+
+                  <ul>
+                    <li>
+                      <a href="http://sass-lang.com/">Sass</a> is easy to learn and a powerful way to write CSS.</li>
+                    <li>
+                      <a href="http://compass-style.org/">Compass</a> contains a lot of reusable patterns.</li>
+                    <li>
+                      <a href="getbootstrap.com">Twitter Bootstrap</a> is a popular template.
+                      <br>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <section id="javascript">
+              <h4>
+                <a name="javascript" class="anchor" href="#javascript">
+                  <span class="octicon octicon-link"></span>
+                </a>Javascript</h4>
+
+              <ul>
+                <li>
+                  Fundamental JavaScript Concepts
+                  <ul>
+                    <li>
+                      <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla Developer Network</a>
+                      </strong>
+                    </li>
+                     <li>
+                      <b><a href="http://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden</a></b>
+                      is a good reference to language quirks and gotchas.</li>
+                    <li>
+                      <a href="http://eloquentjavascript.net/">Eloquent Javascript</a> – free online book by Marijn Haverbeke
+                    </li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript?redirectlocale=en-US&amp;redirectslug=JavaScript%2FA_re-introduction_to_JavaScript">A re-introduction to JavaScript (JS Tutorial)</a> on Mozilla Developer Network</li>
+                    <li><a href="http://www.amazon.com/dp/0596517742">JavaScript: The Good Parts</a> – Douglas Crockford (See also <a href="ahttp://yuiblog.com/crockford/">his YUI videos</a>)</li>
+
+                    <li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns</a> by Addy Osmani</li>
+                  </ul>
+
+                </li>
+                <li>
+                  <p>Debugging:</p>
+
+                  <ul>
+                    <li>Learn to use
+                      <strong><a href="http://jtaby.com/blog/2012/04/23/modern-web-development-part-1">the Webkit Inspector</a>
+                      </strong>(or Firebug if you’re a firefox fan.)
+
+                      <ul>
+                        <li>
+                          <em>Learn useful short keys</em>– the basic one is
+                          <em>cmd+shift+I</em>for opening inspector. Then you can learn more by clicking the gear button on the bottom right and see the shortcuts tab</li>
+                      </ul>
+                    </li>
+                    <li>use <a href="http://www.jshint.com/">JSHint</a> to avoid syntactic bugs</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="https://plus.google.com/+AddyOsmani/posts/h47ZvatmKqV">Addy Osmani's list of good JavaScript style guide</a>
+                  </p>
+                </li>
+                <li>
+                  <p>Javascript MVC</p>
+
+                  <ul>
+                    <li>
+                      <strong>Backbone.js</strong> - Simple MVC Backbone
+
+                      <ul>
+                        <li><a href="http://addyosmani.github.io/backbone-fundamentals/">Backbone Fundamentals</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>Angular.js - better but takes more time to learn (say 1-2 weeks to really understand concepts)
+
+                      <ul>
+                        <li>Start with <a href="http://egghead.io">egghead.io</a> and <a href="http://thinkster.io">thinkster.io</a>.
+                          <br>
+                        </li>
+                        <li>Angular's official documentation is a pain. When you look at it, make sure to look at comments so you learn from others' confusion. The community is big, so it should get better over time.</li>
+                        <li>Use <a href="yeoman.io">yeoman</a>
+                        </li>
+                        <li>Useful stuff from ng-newsletter
+                          <ul>
+                            <li><a href="http://www.ng-newsletter.com/posts/angular-for-the-jquery-developer.html?utm_source=ng-newsletter&amp;utm_campaign=5e1542e9ab-AngularJS_Newsletter_11_19_1311_18_2013&amp;utm_medium=email&amp;utm_term=0_fa61364f13-5e1542e9ab-93794813">Angular for jQuery developer</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>Make sure to have AngularJS Batarang in Chrome so you can debug
+                          <em>scope</em>.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>Javascript utility libraries like <a href="https://github.com/lodash/lodash">Lodash</a> (An arguably better fork of <a href="http://underscorejs.org">underscore</a>) – make sure to use them only if needed. Sometimes d3 helpers are enough.</p>
+                  <ul>
+                    <li><a href="http://tech.pro/tutorial/1611/functional-javascript">a lodash tutorial</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <p>Need an in-memory database for your vis prototype? - try <a href="https://github.com/StanfordHCI/datavore">datavore</a> or <a href="http://square.github.io/crossfilter/">crossfilter</a>
+                  </p>
+                </li>
+                <li>Syntax alternatives: <a href="http://coffeescript.org/">Coffeescript</a>, <a href="http://www.typescriptlang.org/">MS TypeScript</a></li>
+              </ul>
+            </section>
+            <section id="d3">
+              <h4>
+                <a name="d3js" class="anchor" href="#d3js">
+                  <span class="octicon octicon-link"></span>
+                </a>d3.js</h4>
+
+              <ul>
+                <li>
+                  <p>
+                    <a href="http://chimera.labs.oreilly.com/books/1230000000345">
+                      <strong>Interactive Data Visualization for the Web</strong>
+                    </a>
+                    <em>Scott Murray</em> (<a href="http://chimera.labs.oreilly.com/books/1230000000345/index.html">free online version</a>)</p>
+                  <ul>
+                    <li>
+                      <a href="http://alignedleft.com/tutorials/d3/">Scott Murray’s Original tutorial</a> (shorter)</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><a href="http://vogievetsky.github.io/IntroD3/#1">Vadim Ogievetsky's Intro Slides</a>
+                  </p>
+                </li>
+                <li>
+                  <p>Jérôme Cukier &amp; Scott Murray’s <a href="https://github.com/alignedleft/strata-d3-tutorial">d3 tutorial at Strata 2013</a> (<a href="https://github.com/alignedleft/strata-d3-tutorial/raw/master/Strata%202013%20Slides.pdf">slides</a>)</p>
+                  <ul>
+                    <li>(older) <a href="http://jeromecukier.net/presentations/d3-tutorial/">d3 tutorial at Visweek 2012</a> by Jérôme Cukier, Jeff Heer, and Scott Murray. (<a href="http://jeromecukier.net/d3-tutorial.zip">source</a>, <a href="http://vis.stanford.edu/jheer/talks/VisWeek2012">demo</a>, <a href="http://bit.ly/d3cheatsheet">cheatsheet</a>)</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>More extensive list of examples can be found in d3's <a href="https://github.com/mbostock/d3/wiki/Tutorials">tutorial page</a> and <a href="https://github.com/mbostock/d3/wiki/Gallery">gallery</a> and <a href="http://christopheviau.com/d3list/gallery.html">Christophe Viau's gallery</a>.</p>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <section id="git">
+            <h4>
+              <a name="git--github" class="anchor" href="#git--github">
+                <span class="octicon octicon-link"></span>
+              </a>Git &amp; Github
+            </h4>
+
+            <ul>
+              <li>Git Tutorials
+                <ul>
+                  <li><a href="http://git-scm.com/doc">Git Official Docs</a>
+                  </li>
+                  <li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">Visual Git Guide</a>
+                  </li>
+                  <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A Successful Branching Model</a>
+                  </li>
+                </ul>
+              </li>
+              <li>Github
+                <ul>
+                  <li>Use Github's issue tracker, so you can refer to issues in your commit messages using # followed by issue no.</li>
+                  <li>Working in a team? Use Github's <a href="https://help.github.com/articles/using-pull-requests">Pull Request</a> so you can do code review.
+                    <ul>
+                      <li>
+                        <a href="http://cesium.agi.com/2013/10/08/GitHub-Pull-Request-Workflows/">Pull Request Workflows</a> by Patrick Cozzi</li>
+                    </ul>
+                  </li>
+                  <li>Extras
+                    <ul>
+                      <li><a href="https://help.github.com/articles/interactive-rebase">Interactive Rebase</a>
+                      </li>
+                      <li>Need to merge multiple repos (e.g. using <a href="https://github.com/StanfordHCI/datavore">datavore</a> in another project)? Use <a href="https://help.github.com/articles/working-with-subtree-merge">git subtree</a> and DO NOT use <a href="http://ayende.com/blog/4746/the-problem-with-git-submodules">git submodule</a>.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>GUI
+                <ul>
+                  <li>Using git with command line is generally fast but using <a href="http://sourcetreeapp.com/">SourceTree</a> is easier for reviewing your code before committing or committing a part of your changes and reduce chances that you will run a wrong command (such as push wrong branch to master).</li>
+                </ul>
+              </li>
+              <li>More Tips
+                <ul>
+                  <li>
+                    <a href="http://en.wikipedia.org/wiki/Atomic_commit">Atomic Commit</a> is a good practice.</li>
+                  <li>
+                    <a href="http://git-scm.com/book/en/Git-Tools-Stashing">Stash</a> is useful when you have unfinished messy things and need to switch branches to work on something else.</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="dataset">
+          <h1>Data Sets</h1>
+          <ul>
+            <li><a href="http://nwdata.org/">Civic Data Sets for the Pacific Northwest</a></li>
+            <li><a href="https://vincentarelbundock.github.io/Rdatasets/">An archive of datasets distributed with the R statistical language</a></li>
+            <li><a href="http://blog.visual.ly/data-sources/">30 Places to Find Open Data on the Web</a> – Visual.ly</li>
+            <li><a href="http://www.statistics.gov.uk/default.asp">Office for National Statistics (UK)</a> - a repository of detailed statistics about Great Britain and Northern Irland</li>
+            <li><a href="http://data.worldbank.org/data-catalog">World Bank Data Catalog</a>
+            </li>
+            <li><a href="http://www.cdc.gov/nchs/data_access/data_tools.htm">CDC NCHS Data</a> - CDC's National Center for Health Statistics Data Access</li>
+            <li><a href="http://archive.ics.uci.edu/ml/">Machine Learning Repository</a> - large variety of maintained data sets</li>
+          </ul>
+        </section>
+
+        <section id="links">
+          <h1>Links</h1>
+          <section>
+            <h4>Visualization Blogs</h4>
+            <ul>
+              <li><a href="http://flowingdata.com/">Flowing Data</a></li>
+              <li><a href="http://infosthetics.com/">Information Aesthetics</a></li>
+              <li><a href="http://www.visualcomplexity.com/vc/">Visual Complexity</a></li>
+              <li><a href="http://www.edwardtufte.com/bboard/q-and-a?topic_id=1">Edward Tufte: Ask E.T. Forum</a></li>
+              <li><a href="http://www.perceptualedge.com/blog/">Visual Business Intelligence by Stephen Few</a></li>
+              <li><a href="http://andrewgelman.com/">Statistical Modeling, Causal Inference, and Social Science</a></li>
+              <li><a href="http://www.informationisbeautiful.net/">Information is Beautiful</a></li>
+              <li><a href="http://blog.visual.ly/">Visual.ly</a></li>
+            </ul>
+          </section>
+        </section>
+    </div>
+   
+  </body>
+</html>

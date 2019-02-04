@@ -1,0 +1,54 @@
+body {
+      font-family: 'Noto Serif', serif;
+      /*margin: 2rem;*/
+      margin: 0 auto;
+      max-width: 950px;
+      padding: 0 20px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: skyblue;
+      cursor: pointer;
+    }
+
+    .mv-bar.mv-ui{
+      display:none;
+    }
+
+    .day {
+      margin-left:10px;
+    }
+
+    /*PEN STYLES*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display:flex;
+    }
+
+    .date {
+      color:skyblue;
+    }
+
+    .section-header {
+      font-size: 19px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    thead {
+      font-weight: bold;
+    }
