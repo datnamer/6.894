@@ -126,7 +126,12 @@
 		{
 			"date": "3/18",
 			"topic": "A3 Demos",
-			"assignment": [],
+			"assignment": [
+				{
+					"title": "A3 Peer Eval Assigned / FP Proposals Assigned",
+					"due": "3/22"
+				}
+			],
 			"reading": [
 				{
 					"title": "Design & Redesign. Viegas & Wattenberg. ",
