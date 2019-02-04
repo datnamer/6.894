@@ -45,7 +45,7 @@
 			"assignment": [],
 			"reading": [
 				{
-					"title": "Enterprise Data Analysis and Visualization. Kandel et al."
+					"title": "Kandel, S., Paepcke, A., Hellerstein, J.M. and Heer, J., 2012. Enterprise data analysis and visualization: An interview study. IEEE Transactions on Visualization & Computer Graphics, (12), pp.2917-2926"
 				}
 			],
 			"topic": "Exploratory Data Analysis (EDA)"
@@ -61,7 +61,7 @@
 			],
 			"reading": [
 				{
-					"title": "Voyager. Wongsuphasawat et al."
+					"title": "Wongsuphasawat, K., Moritz, D., Anand, A., Mackinlay, J., Howe, B. and Heer, J., 2016. Voyager: Exploratory analysis via faceted browsing of visualization recommendations. IEEE Transactions on Visualization & Computer Graphics, (1)"
 				}
 			]
 		},
