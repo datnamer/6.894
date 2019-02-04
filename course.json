@@ -47,7 +47,8 @@
 				{
 					"title": "Enterprise Data Analysis and Visualization. Kandel et al."
 				}
-			]
+			],
+			"topic": "Exploratory Data Analysis (EDA)"
 		},
 		{
 			"date": "2/20",
@@ -88,7 +89,8 @@
 					"title": "Direct Manipulation Interfaces. Hutchins, et al. "
 				}
 			],
-			"date": "3/4"
+			"date": "3/4",
+			"topic": "Interaction"
 		},
 		{
 			"date": "3/6",
