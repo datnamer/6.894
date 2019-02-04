@@ -19,13 +19,8 @@
 			"assignment": [],
 			"reading": [
 				{
-					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman."
-				},
-				{
-					"title": "Nested Model. Munzner."
-				},
-				{
-					"title": "Design & Redesign. Wattenberg & Viegas."
+					"title": "The Power of Representation, Ch 3 Things that Make Us Smart. Don Norman.",
+					"url": "http://nb.mit.edu/f/51682"
 				}
 			]
 		},
@@ -40,7 +35,8 @@
 			],
 			"reading": [
 				{
-					"title": "Nested Model. Munzner."
+					"title": "Nested Model. Munzner.",
+					"url": "http://nb.mit.edu/f/51681"
 				}
 			]
 		},
