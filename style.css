@@ -69,3 +69,5 @@ h3, #meeting {
   color: coral;
   font-weight: 500;
 }
+
+.reading a { color: #333; }
