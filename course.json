@@ -1,225 +1,607 @@
 {
-	"lecture": [
+	"weeks": [
 		{
-			"assignment": [
+			"theme": "Introduction",
+			"lectures": [
 				{
-					"github": "tarfahalrashed",
-					"title": "A1 (Visualization Design)",
-					"due": "2/13",
-					"url": "./A1.html"
-				}
-			],
-			"reading": [],
-			"date": "2/6",
-			"topic": "Introduction : Value of Visualization"
-		},
-		{
-			"date": "2/11",
-			"topic": "Data & Image Models",
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Norman, D., 2014. Things that make us smart: Defending human attributes in the age of the machine. Diversion Books. ",
-					"url": "http://nb.mit.edu/f/51682"
+					"date": "Wed 2/6",
+					"title": "The Value of Visualization",
+					"slides": "",
+					"readings": [
+					],
+					"assignments": [
+						{
+							"name": "A1 (Visualization Design)",
+							"url": "./A1.html",
+							"assigned": true
+						}
+					]
 				}
 			]
 		},
 		{
-			"date": "2/13",
-			"topic": "Visual Encodings w/Altair & Vega-Lite",
-			"assignment": [
+			"theme": "Fundamentals",
+			"lectures": [
 				{
-					"title": "A2",
-					"due": "2/27"
-				}
-			],
-			"reading": [
+					"date": "Mon 2/11",
+					"title": "Data & Image Models",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Chapter 3: The Power of Representation",
+							"venue": "Things that Make Us Smart",
+							"authors": "Donald A. Norman",
+							"year": "1993",
+							"url": "http://nb.mit.edu/f/51682",
+							"required": true
+						},
+						{
+							"title": "Chapter 1: Information Visualization",
+							"venue": "Readings in Information Visualization",
+							"authors": "Stuart Card, Jock Mackinlay, and Ben Shneiderman",
+							"year": "1999",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "The Value of Visualization",
+							"venue": "Visualization",
+							"authors": "Jarke van Wijk",
+							"year": "2005",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
 				{
-					"title": "Munzner, T., 2009. A nested process model for visualization design and validation. IEEE Transactions on Visualization & Computer Graphics, (6), pp.921-928. ",
-					"url": "http://nb.mit.edu/f/51681"
-				}
-			]
-		},
-		{
-			"date": "2/19",
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Kandel, S., Paepcke, A., Hellerstein, J.M. and Heer, J., 2012. Enterprise data analysis and visualization: An interview study. IEEE Transactions on Visualization & Computer Graphics, (12), pp.2917-2926"
-				}
-			],
-			"topic": "Exploratory Data Analysis (EDA)"
-		},
-		{
-			"date": "2/20",
-			"topic": "Wrangling + EDA w/Tableau",
-			"assignment": [
-				{
-					"title": "A3",
-					"due": "3/13"
-				}
-			],
-			"reading": [
-				{
-					"title": "Wongsuphasawat, K., Moritz, D., Anand, A., Mackinlay, J., Howe, B. and Heer, J., 2016. Voyager: Exploratory analysis via faceted browsing of visualization recommendations. IEEE Transactions on Visualization & Computer Graphics, (1)"
-				}
-			]
-		},
-		{
-			"date": "2/25",
-			"topic": "Design for Perception",
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Kennedy Elliott. 39 Studies about Human Perception in 30 minutes. ",
-					"url": "https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73"
-				}
-			]
-		},
-		{
-			"date": "2/27",
-			"topic": "Guest Lecture: Hendrik Strobelt, Intro to D3.js",
-			"assignment": [],
-			"reading": []
-		},
-		{
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Hutchins, E.L., Hollan, J.D. and Norman, D.A., 1985. Direct manipulation interfaces. Human-computer interaction, 1(4), pp.311-338."
-				}
-			],
-			"date": "3/4",
-			"topic": "Interaction"
-		},
-		{
-			"date": "3/6",
-			"topic": "Vega-Lite Selections, Reactive Vega, D3 Event Handling",
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Pirolli, P., 2003. Exploring and finding information. HCI models, theories and frameworks: Toward a multidisciplinary science, pp.157-191. "
-				}
-			]
-		},
-		{
-			"date": "3/11",
-			"topic": "Animation",
-			"assignment": [],
-			"reading": [
-				{
-					"title": "Tversky, B., Morrison, J.B. and Betrancourt, M., 2002. Animation: can it facilitate?. International journal of human-computer studies, 57(4), pp.247-262. "
+					"date": "Wed 2/13",
+					"title": "Visual Encodings with Vega-Lite & Altair",
+					"slides": "",
+					"readings": [
+						{
+							"title": "A Nested Model for Visualization Design and Validation",
+							"venue": "IEEE InfoVis",
+							"authors": "Tamara Munzner",
+							"year": "2009",
+							"url": "http://nb.mit.edu/f/51681",
+							"required": true
+						},
+						{
+							"title": "A Tour through the Visualization Zoo",
+							"venue": "ACM Queue, 8(5)",
+							"authors": "Jeffrey Heer, Michael Bostock, and Vadim Ogievetsky",
+							"year": "2010",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Postmortem of an Example",
+							"venue": "Graphics and Graphic Information-Processing",
+							"authors": "Jacques Bertin",
+							"year": "1981",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "A1 (Visualization Design)",
+							"url": "./A1.html",
+							"due": true
+						},
+						{
+							"name": "A2 (Exploratory Analysis)",
+							"url": "./A2.html",
+							"assigned": true
+						}
+					]
 				}
 			]
 		},
 		{
-			"date": "3/13",
-			"topic": "Color",
-			"assignment": [],
-			"reading": [
+			"theme": "Exploratory Data Analysis (EDA)",
+			"lectures": [
 				{
-					"title": "Brewer, C.A., 1999, August. Color use guidelines for data representation. In Proceedings of the Section on Statistical Graphics, American Statistical Association (pp. 55-60). Alexandria, VA: American Statistical Association. ",
-					"url": "http://www.personal.psu.edu/cab38/ColorSch/ASApaper.html"
+					"date": "Tue 2/19",
+					"title": "Case Studies in EDA",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Enterprise Data Analysis and Visualization: An Interview Study",
+							"venue": "IEEE InfoVis",
+							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
+							"year": "2012",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Research Directions in Data Wrangling: Visualizations and Transformations for Usable and Credible Data",
+							"venue": "Information Visualization 10.4",
+							"authors": "Sean Kandel, Jeffrey Heer, Catherine Plaisant, Jessie Kennedy, Frank van Ham, Nathalie Henry Riche, Chris Weaver, Bongshin Lee, Dominique Brodbeck, and Paolo Buono",
+							"year": "2011",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Low-Level Components of Analytic Activity in Information Visualization",
+							"venue": "IEEE InfoVis",
+							"authors": "Robert Amar, James Eagan, and John Stasko",
+							"year": "2005",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 2/20",
+					"title": "EDA with Trifacta Wrangler and Tableau",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
+							"venue": "IEEE InfoVis",
+							"authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
+							"year": "2015",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Wrangler: Interactive Visual Specification of Data Transformation Scripts",
+							"venue": "ACM CHI",
+							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
+							"year": "2011",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Proactive Wrangling: Mixed-Initiative End-User Programming of Data Transformation Scripts",
+							"venue": "ACM UIST",
+							"authors": "Philip J. Guo, Sean Kandel, Joseph M. Hellerstein, and Jeffrey Heer",
+							"year": "2011",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
 				}
 			]
 		},
 		{
-			"date": "3/18",
-			"topic": "A3 Demos",
-			"assignment": [
+			"theme": "Visual Design",
+			"lectures": [
 				{
-					"title": "A3 Peer Eval Assigned / FP Proposals Assigned",
-					"due": "3/22"
-				}
-			],
-			"reading": [
+					"date": "Mon 2/25",
+					"title": "Effective Visual Encoding",
+					"slides": "",
+					"readings": [
+						{
+							"title": "What Makes a Visualization Memorable?",
+							"venue": "IEEE InfoVis",
+							"authors": "Michelle A. Borkin, Azalea A. Vo, Zoya Bylinskii, Phillip Isola, Shashank Sunkavalli, Aude Oliva, and Hanspeter Pfister",
+							"year": "2013",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "39 Studies about Human Perception in 30 Minutes",
+							"authors": "Kennedy Elliott",
+							"url": "https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73",
+							"year": "2016",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
 				{
-					"title": "Viegas, F. and Martin Wattenberg. Design & Redesign. ",
-					"url": "https://medium.com/@hint_fm/design-and-redesign-4ab77206cf9"
+					"date": "Wed 2/27",
+					"title": "Guest Lecture: Hendrik Strobelt (MIT-IBM Watson AI Lab). Introduction to D3.js",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Beyond Memorability: Visualization Recognition and Recall",
+							"venue": "IEEE InfoVis",
+							"authors": "Michelle A. Borkin, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, and Aude Oliva",
+							"year": "2015",
+							"url": " ",
+							"required": true
+						}
+					],
+					"assignments": [
+						{
+							"name": "A2 (Exploratory Analysis)",
+							"url": "./A2.html",
+							"due": true
+						},
+						{
+							"name": "A3 (Interactive Visualization Prototype)",
+							"url": "./A3.html",
+							"assigned": true
+						}
+					]
 				}
 			]
 		},
 		{
-			"date": "3/20",
-			"topic": "A3 Demos / Redesign Exercise",
-			"assignment": [],
-			"reading": []
-		},
-		{
-			"date": "4/1",
-			"topic": "Narrative + Beliefs",
-			"assignment": [],
-			"reading": [
+			"theme": "Interaction",
+			"lectures": [
 				{
-					"title": "Hullman, J. and Diakopoulos, N., 2011. Visualization rhetoric: Framing effects in narrative visualization. IEEE transactions on visualization and computer graphics, 17(12), pp.2231-2240. "
+					"date": "Mon 3/4",
+					"title": "A Tour through the Interaction Zoo",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Direct Manipulation Interfaces",
+							"authors": "Edwin L. Hutchins, James D. Hollan, Donald A. Norman",
+							"venue": "Human-Computer Interaction 1(4)",
+							"year": "1985",
+							"url": " ",
+							"required": true
+						}
+					],
+					"assignments": [
+						{
+							"name": "A3 Team Registration",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				},
+				{
+					"date": "Wed 3/6",
+					"title": "Selections, Signals, and Event Handlers",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Exploring and Finding Information",
+							"authors": "Peter Pirolli",
+							"venue": "HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science",
+							"year": "2003",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Vega-Lite: A Grammar of Interactive Graphics",
+							"authors": "Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, and Jeffrey Heer",
+							"venue": "IEEE InfoVis",
+							"year": "2016",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Declarative Interaction Design for Data Visualization",
+							"authors": "Arvind Satyanarayan, Kanit Wongsuphasawat, and Jeffrey Heer",
+							"venue": "ACM UIST",
+							"year": "2014",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
 				}
 			]
 		},
 		{
-			"date": "4/3",
-			"topic": "Error & Uncertainty",
-			"assignment": [],
-			"reading": [
+			"theme": "Perception",
+			"lectures": [
 				{
-					"title": "Kay, M., Kola, T., Hullman, J.R. and Munson, S.A., 2016, May. When (ish) is my bus?: User-centered visualizations of uncertainty in everyday, mobile predictive systems. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (pp. 5092-5103). ACM. "
+					"date": "Mon 3/11",
+					"title": "Designing for Perception",
+					"slides": "",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 3/13",
+					"title": "Color",
+					"slides": "",
+					"readings": [
+						{
+							"title": "Color Naming Models for Color Selection, Image Editing and Palette Design",
+							"authors": "Jeffrey Heer and Maureen Stone",
+							"venue": "ACM CHI",
+							"year": "2012",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps",
+							"authors": "Yang Liu and Jeffrey Heer",
+							"venue": "ACM CHI",
+							"year": "2018",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Colorgorical: Creating Discriminable and Preferable Color Palettes for Information Visualization",
+							"authors": "Connor Gramazio, David Laidlaw, and Karen Schloss",
+							"venue": "IEEE InfoVis",
+							"year": "2017",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "A3 (Interactive Visualization Prototype)",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
 				}
 			]
 		},
 		{
-			"date": "4/8",
-			"topic": "Mapping & Cartography",
-			"assignment": [],
-			"reading": []
+			"theme": "Assignment 3 Demos",
+			"lectures": [
+				{
+					"date": "Mon 3/18",
+					"title": "A3 Demos",
+					"slides": "",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "A3 Peer Critique",
+							"url": "./A3.html",
+							"assigned": true
+						},
+						{
+							"name": "Final Project",
+							"url": "./FP.html",
+							"assigned": true
+						}
+					]
+				},
+				{
+					"date": "Wed 3/20",
+					"title": "A3 Demos",
+					"slides": "",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Fri, 3/22",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "A3 Peer Critique",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				}
+			]
 		},
 		{
-			"date": "4/10",
-			"topic": "Text Visualization",
-			"assignment": [],
-			"reading": []
+			"theme": "Spring Break",
+			"lectures": []
 		},
 		{
-			"date": "4/17",
-			"topic": "Final Project Check In w/Staff",
-			"assignment": [],
-			"reading": []
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/1",
+					"title": "No Class",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/3",
+					"title": "Animation",
+					"readings": [
+						{
+							"title": "Animation: Can It Facilitate?",
+							"authors": "Barbara Tversky, Julie Morrison, Mireille Betrancourt",
+							"venue": "International Journal of Human Computer Studies",
+							"year": "2002",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Animated Transitions in Statistical Data Graphics",
+							"authors": "Jeffrey Heer and George Robertson",
+							"venue": "IEEE InfoVis",
+							"year": "2007",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "Final Project Proposals",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				}
+			]
 		},
 		{
-			"date": "4/22, 24",
-			"topic": "Final Project MVP Presentations",
-			"assignment": [],
-			"reading": []
+			"theme": "Explanatory Visualization",
+			"lectures": [
+				{
+					"date": "Mon 4/8",
+					"title": "Narrative & Beliefs",
+					"readings": [
+						{
+							"title": "Visualization Rhetoric: Framing Effects in Narrative Visualization.",
+							"authors": "Jessica Hullman and Nick Diakopoulos",
+							"venue": "IEEE InfoVis",
+							"year": "2011",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Narrative Visualization: Telling Stories with Data",
+							"authors": "Edward Segel and Jeffrey Heer",
+							"venue": "IEEE InfoVis",
+							"year": "2010",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Data Through Others’ Eyes: The Impact of Visualizing Others' Expectations on Visualization Interpretation",
+							"authors": "Yea-Seul Kim, Katharina Reinecke, and Jessica Hullman",
+							"venue": "IEEE InfoVis",
+							"year": "2017",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/10",
+					"title": "Error & Uncertainty",
+					"readings": [
+						{
+							"title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
+							"authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
+							"venue": "ACM CHI",
+							"year": "2016",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error",
+							"authors": "Michael Correll and Michael Gleicher",
+							"venue": "IEEE InfoVis",
+							"year": "2014",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
+							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
+							"venue": "PLOS ONE",
+							"year": "2015",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/15",
+					"title": "Patriot's Day – No Class",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/17",
+					"title": "Final Project Check-In with Teaching Staff",
+					"readings": [],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "Final Project Presentations",
+			"lectures": [
+				{
+					"date": "Mon 4/22",
+					"title": "Final Project Presentations",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "Final Project Peer Critique",
+							"url": "./FP.html",
+							"assigned": true
+						}
+					]
+				},
+				{
+					"date": "Wed 4/24",
+					"title": "Final Project Presentations",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Fri 4/26",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "Final Project Peer Critique",
+							"url": "./FP.html",
+							"due": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/29",
+					"title": "Mapping & Cartography",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/1",
+					"title": "Text Visualization",
+					"readings": [
+						{
+							"title": "Guidelines for Effective Usage of Text Highlighting Techniques",
+							"authors": "Hendrik Strobelt, Daniela Oelke, Bum Chul Kwon, Tobias Schreck, and Hanspeter Pfister",
+							"venue": "IEEE InfoVis",
+							"year": "2016",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Mapping Text with Phrase Nets",
+							"authors": "Frank van Ham, Martin Wattenberg & Fernanda Viégas",
+							"venue": "IEEE InfoVis",
+							"year": "2009",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 5/6",
+					"title": "Guest Lecture: Sarah Williams (MIT DUSP). Visualization, Urban Planning, and Policy",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/1",
+					"title": "No Class",
+					"readings": [],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 5/13",
+					"title": "Final Project Poster Session",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/15",
+					"title": "Research Frontiers in Interactive Data Visualization",
+					"readings": [],
+					"assignments": []
+				}
+			]
 		}
-	],
-	"grading": {
-		"category": [
-			{
-				"title": "Class Participation",
-				"percentage": "10%"
-			},
-			{
-				"title": "Reading Commentaries",
-				"percentage": "10%"
-			},
-			{
-				"title": "A1 (Visualization Design)",
-				"percentage": "5%"
-			},
-			{
-				"title": "A2",
-				"percentage": "10%"
-			},
-			{
-				"title": "A3",
-				"percentage": "20%"
-			},
-			{
-				"title": "A3 Peer Eval",
-				"percentage": "5%"
-			},
-			{
-				"title": "Final Project",
-				"percentage": "40%"
-			}
-		]
-	}
+	]
 }

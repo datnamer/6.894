@@ -2,144 +2,231 @@
 <html>
   <head>  
     <title>6.894: Interactive Data Visualization (Spring 2019)</title>
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,200,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|PT+Serif" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- PureCSS Responsive Grid -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
+    <!--<![endif]-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet">
+
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="mavo.min.js"></script>
     <link rel="stylesheet" href="mavo.css">
-    <link rel="stylesheet" href="viz-font.css">
-    <link rel="stylesheet" href="header.css">
+    
+    <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
     <link rel="stylesheet" href="style.css">
-  <script type="text/javascript">
-    // hide mavo menu when the user is not logged in. 
-    $( document ).ready(function() {
-      $('body').bind("mv-load", function() {  
-        if($(".mv-status").text().includes("Logged in to Github as")) 
-          $(".mv-bar.mv-ui").show();
-      });
-    });    
-  </script>
+
+    <script type="text/javascript">
+      // hide mavo menu when the user is not logged in. 
+      $( document ).ready(function() {
+        $('body').bind("mv-load", function() {  
+          if($(".mv-status").text().includes("Logged in to Github as"))  {
+            $(".mv-bar.mv-ui").show();
+          } else {
+            $(".mv-bar.mv-ui").hide();
+          }
+        });
+
+        if (window.location.hostname === 'vis.csail.mit.edu') {
+          document.body.classList.add("csail-url");
+        }
+      });    
+    </script>
   </head>
+
 <!-- https://github.com/mitvis/6.894 -->
   <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
-    <div id="header" class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2">
-          <a id="wordmark" href="./index.html">
-            <div id="logo">
-              <!--?xml version="1.0" encoding="utf-8"?-->
-              <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
-              <g>
-                <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
-                  h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
-              </g>
-              <g>
-                <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
-                  c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
-              </g>
-              <g>
-                <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
-                  h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
-              </g>
-              <g>
-                <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
-                  c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
-                <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
-                  c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
-              </g>
-              <g>
-                <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
-                  c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
-              </g>
-              <g>
-                <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
-                  c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
-              </g>
-              <g>
-                <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
-                  c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
-              </g>
-              <g>
-                <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
-                  h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
-              </g>
-              <g>
-                <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
-                  h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
-              </g>
-              <g>
-                <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
-                  h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
-              </g>
-              </svg>
+    <div class="pure-g">
+      <div id="ribbon" class="pure-u-1">
+        <div class="red"></div>
+        <div class="grey"></div>
+      </div>
+
+      <div id="center" class="pure-u-1">
+        <div id="header" class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="wordmark">
+              <a href="/">
+                <div id="logo">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+                  <g>
+                    <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
+                      c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                    <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
+                      c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
+                      c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
+                  </g>
+                  <g>
+                    <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
+                      c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
+                  </g>
+                  <g>
+                    <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
+                      h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
+                  </g>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="/classes/6.894">
+                <h1>
+                  <span class="red">6.894</span>
+                  : Interactive Data Visualization
+                </h1>
+              </a>
             </div>
-      
-            <h1>
-              <span style="color:#cc5200;">6.894</span>
-              : Interactive Data Visualization
-            </h1>
-          </a>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2">
-          <div id="links">
-            <span>
-              <a href="./" class="selected">Home</a>
-            </span>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="links">
+              <span>
+                <a href="./">Home</a>
+                &middot;
+                <a href="./resources.html">Resources</a>
+                &middot;
+                <a href="https://piazza.com/class/jrc6epsrssu1in">Piazza</a>
+                &middot;
+                <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-  Spring 2019 &#183; MW230 (32-124) &#183; <a href='https://piazza.com/class/jrc6epsrssu1in'>Piazza</a> &#183; <a href='https://stellar.mit.edu/S/course/6/sp19/6.894/'>Stellar</a>
-  <p property='intro' mv-edit-placeholder="(course intro)"></p>
   
+        <h2>Assignment 1: Visualization Design</h2>
 
+        <p>
+          In this assignment, you will design a visualization for a small data set and provide a rigorous rationale for your design choices. 
+          You should in theory be ready to explain the contribution of <em>every pixel</em> in the display. 
+          You are free to use any graphics or charting tool you please – including drafting it by hand. 
+          However, you may find it most instructive to create the chart from scratch using a graphics API of your choice.
+        </p>
 
+        <p>
+          (See <a href="./resources.html">Resources</a> for a list of visualization tools.)
+        </p>
 
-  <br>
-  <div class="article" data-spy="scroll" data-target=".navbar">
-      <h1>Assignment 1: Visualization Design</h1>
+        <h3>Data Set: U.S. Population, 1900 vs. 2000</h3>
 
-      <p>In this assignment, you will design a visualization for a small data set and provide a rigorous rationale for your design choices. You should in theory be ready to explain the contribution of <em>every pixel</em> in the display. You are free to use any graphics or charting tool you please - including drafting it by hand. However, you may find it most instructive to create the chart from scratch using a graphics API of your choice.
-      </p>
+        <p>
+          Every 10 years, the census bureau documents the demographic make-up of the United States, influencing everything from congressional districting to social services. 
+          This dataset contains a high-level summary of census data for two years a century apart: 1900 and 2000. 
+          The data is a CSV (comma-separated values) file that describes the U.S. population in terms of year, reported sex (1: male, 2: female), age group (binned into 5 year segments from 0-4 years old up to 90+ years old), and the total count of people per group. 
+          There are 38 data points per year, for a total of 76 data points.
+        </p>
 
-      <p>
-        (See <a href="./resources.html">Resources</a> for a list of visualization tools.)
-      </p>
+        <p>
+          Dataset: <a href="data/census2000.csv">CSV</a><br>
+          Source: <a href="http://ipums.org">U.S. Census Bureau via IPUMS</a>
+        </p>
 
-      <h2>Data Set: U.S. Population, 1900 vs. 2000</h2>
+        <h3>Assignment</h3>
 
-      <p>Every 10 years, the census bureau documents the demographic make-up of the United States, influencing everything from congressional districting to social services. This dataset contains a high-level summary of census data for two years a century apart: 1900 and 2000. The data is a CSV (comma-separated values) file that describes the U.S. population in terms of year, reported sex (1: male, 2: female), age group (binned into 5 year segments from 0-4 years old up to 90+ years old), and the total count of people per group. There are 38 data points per year, for a total of 76 data points.</p>
+        <p>
+          Your task is to design a static (i.e., single image) visualization that you believe effectively communicates the data and provide a short write-up (no more than 4 paragraphs) describing your design. 
+          Start by choosing a question you'd like your visualization to answer. 
+          <strong>Design your visualization to answer that question, and use the question as the title of your graphic.</strong>
+        </p>
 
-      <p>
-        Dataset: <a href="data/census2000.csv">CSV</a><br>
-        Source: <a href="http://ipums.org">U.S. Census Bureau via IPUMS</a>
-      </p>
+        <p>
+          While you must use the data set given, note that you are free to transform the data as you see fit. 
+          Such transforms may include (but are not limited to) log transformation, computing percentages or averages, grouping elements into new categories, or removing unnecessary variables or records. 
+          You are also free to incorporate external data as you see fit. 
+          Your chart image should be interpretable without recourse to your short write-up. 
+          Do not forget to include title, axis labels or legends as needed!
+        </p>
 
-      <h2>Assignment</h2>
+        <p>
+          As different visualizations can emphasize different aspects of a data set, you should document what aspects of the data you are attempting to most effectively communicate. 
+          In short, what story are you trying to tell? 
+          Just as important, also note which aspects of the data might be obscured or down-played due to your visualization design.
+        </p>
 
-      <p>Your task is to design a static (i.e., single image) visualization that you believe effectively communicates the data and provide a short write-up (no more than 4 paragraphs) describing your design. Start by choosing a question you'd like your visualization to answer. <strong>Design your visualization to answer that question, and use the question as the title of your graphic.</strong></p>
+        <p>
+          In your write-up, you should provide a rigorous rationale for your design decisions. 
+          Document the visual encodings you used and why they are appropriate for the data and your specific question. 
+          These decisions include the choice of visualization type, size, color, scale, and other visual elements, as well as the use of sorting or other data transformations. 
+          How do these decisions facilitate effective communication?
+        </p>
 
-      <p>While you must use the data set given, note that you are free to transform the data as you see fit. Such transforms may include (but are not limited to) log transformation, computing percentages or averages, grouping elements into new categories, or removing unnecessary variables or records. You are also free to incorporate external data as you see fit. Your chart image should be interpretable without recourse to your short write-up. Do not forget to include title, axis labels or legends as needed!</p>
+        <h3>Grading</h3>
 
-      <p>As different visualizations can emphasize different aspects of a data set, you should document what aspects of the data you are attempting to most effectively communicate. In short, what story are you trying to tell? Just as important, also note which aspects of the data might be obscured or down-played due to your visualization design.</p>
+        <p>
+          The assignment score is out of a maximum of 10 points.
+          <!-- Historically, the median score on this assignment has been 8.5, which corresponds to an A-. --> 
+          We will determine scores by judging both the soundness of your design and the quality of the write-up. 
+          We will also look for consideration of audience, message and intended task. 
+          Here are examples of aspects that may lead to point deductions:
+        </p>
 
-      <p>In your write-up, you should provide a rigorous rationale for your design decisions. Document the visual encodings you used and why they are appropriate for the data and your specific question. These decisions include the choice of visualization type, size, color, scale, and other visual elements, as well as the use of sorting or other data transformations. How do these decisions facilitate effective communication?</p>
+        <ul>
+          <li>Use of misleading, unnecessary, or unmotivated graphic elements.</li>
+          <li>Missing chart title, axis labels, or data transformation description.</li>
+          <li>Missing or incomplete design rationale in write-up.</li>
+          <li>Ineffective encodings for your stated goal (e.g., distracting colors, improper data transformation).</li>
+        </ul>
 
-      <h2>Grading</h2>
+        <!-- <p>We will reward entries that go above and beyond the assignment requirements to produce effective graphics. Examples may include outstanding visual design, meaningful incorporation of external data to reveal important trends, demonstrating exceptional creativity, or effective annotations or other narrative devices.</p> -->
 
-      <p><!-- The assignment score is out of a maximum of 10 points. Historically, the median score on this assignment has been 8.5, which corresponds to an A-. --> We will determine scores by judging both the soundness of your design and the quality of the write-up. We will also look for consideration of audience, message and intended task. Here are examples of aspects that may lead to point deductions:</p>
+        <h3>Submission Details</h3>
 
-      <ul>
-        <li>Use of misleading, unnecessary, or unmotivated graphic elements.
-        </li><li>Missing chart title, axis labels, or data transformation description.
-        </li><li>Missing or incomplete design rationale in write-up.
-        </li><li>Ineffective encodings for your stated goal (e.g., distracting colors, improper data transformation).
-      </li></ul>
+        <p>
+          This is an individual assignment. 
+          You may <em>not</em> work in groups. 
+          Your completed assignment is due on <strong>Wednesday 2/13, by noon</strong>.
+        </p>
 
-      <p>We will reward entries that go above and beyond the assignment requirements to produce effective graphics. Examples may include outstanding visual design, meaningful incorporation of external data to reveal important trends, demonstrating exceptional creativity, or effective annotations or other narrative devices.</p>
+        <p>
+          You must submit your assignment using <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>.
+          Please upload a single zip file named using the pattern "mitkerberos_a1.zip" (replacing "mitkerberos" with your MIT Kerberos ID – this is the same as your @mit email address, not a numeric id number). 
+          The zip archive should contain two files: a plain text file named "readme.txt" and a PNG or JPG image file of your visualization design.
+        </p>
 
-    </div>
-   
+        <p>
+          Please use the correct file extension for your image (either .png or .jpg) and be sure your image is sized for a reasonable viewing experience. 
+          Viewers should not have to zoom or scroll in order to effectively view your submission!
+        </p>
+
+        <p>
+          The readme.txt file should contain your write-up, as described above. 
+          Please be sure to include your name and MIT Kerberos in your readme.
+        </p>
+
+      </div>
+    </div>  
   </body>
 </html>

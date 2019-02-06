@@ -1,54 +1,71 @@
 body {
-      font-family: 'Noto Serif', serif;
-      /*margin: 2rem;*/
-      margin: 0 auto;
-      max-width: 950px;
-      padding: 0 20px;
-      margin-top: 10px;
-    }
+  /* font-weight: normal; */
+}
 
-    a {
-      color: skyblue;
-      cursor: pointer;
-    }
+a {
+  color: #A31F34;
+  font-weight: 400;
+}
 
-    .mv-bar.mv-ui{
-      display:none;
-    }
+.csail-uril a { color: #cc5200 }
 
-    .day {
-      margin-left:10px;
-    }
+a:hover { 
+  opacity: 0.75; 
+  text-decoration: underline;
+}
 
-    /*PEN STYLES*/
-    * {
-      box-sizing: border-box;
-    }
+a h1 { color: #000; }
 
-    .row {
-      display:flex;
-    }
+.credits strong { font-weight: 500; }
 
-    .date {
-      color:skyblue;
-    }
+h3, #meeting {
+  font-size: 1em;
+  font-weight: 600;
+}
 
-    .section-header {
-      font-size: 19px;
-    }
+#sidebar h3 { 
+  margin-bottom: 0px;
+}
 
-    table {
-      border-collapse: collapse;
-    }
+.staff { 
+  display: flex; 
+  align-items: center;
+}
 
-    table, th, td {
-      border: 1px solid black;
-    }
+.staff p { 
+  flex: 2; 
+  font-size: 0.9em;
+}
 
-    td {
-      padding: 10px;
-    }
+.headshot { flex: 1; }
 
-    thead {
-      font-weight: bold;
-    }
+.headshot img {
+  width: 100%;
+  border-radius: 50px;
+  padding-right: 5px;
+}
+
+.staff a { 
+  color: #000; 
+  font-weight: 300;
+}
+
+.week p { margin: 0; }
+
+.week ul { 
+  margin-top: 5px;
+  padding-left: 20px; 
+  list-style-type: circle;
+  font-size: 0.9em;
+  width: 95%;
+}
+
+.assigned, .assigned a {
+  color: #31c931;
+  font-weight: 500;
+}
+
+.due, .due a {
+  color: coral;
+  font-weight: 500;
+}
