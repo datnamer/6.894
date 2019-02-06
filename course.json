@@ -60,7 +60,7 @@
 							"venue": "Readings in Information Visualization",
 							"authors": "Stuart Card, Jock Mackinlay, and Ben Shneiderman",
 							"year": "1999",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/51837",
 							"required": false
 						},
 						{
@@ -68,7 +68,7 @@
 							"venue": "Visualization",
 							"authors": "Jarke van Wijk",
 							"year": "2005",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/51838",
 							"required": false
 						}
 					],
@@ -92,7 +92,7 @@
 							"venue": "ACM Queue, 8(5)",
 							"authors": "Jeffrey Heer, Michael Bostock, and Vadim Ogievetsky",
 							"year": "2010",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/51839",
 							"required": false
 						},
 						{
@@ -100,7 +100,7 @@
 							"venue": "Graphics and Graphic Information-Processing",
 							"authors": "Jacques Bertin",
 							"year": "1981",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/51840",
 							"required": false
 						}
 					],
