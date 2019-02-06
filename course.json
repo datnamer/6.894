@@ -1,4 +1,24 @@
 {
+	"staff": [
+		{
+			"title": "Instructor",
+			"name": "Arvind Satyanarayan",
+			"url": "http://arvindsatya.com",
+			"email": "arvindsatya@mit.edu",
+			"officeHours": "Fri, 10–11am",
+			"location": "32-G706",
+			"img": "arvind.jpg"
+		},
+		{
+			"title": "Assistant",
+			"name": "Soya Park",
+			"url": "http://people.csail.mit.edu/soya/",
+			"email": "soya@mit.edu",
+			"officeHours": "Wed, 4–5pm",
+			"location": "32-G7 Lounge",
+			"img": "soya.JPG"
+		}
+	],
 	"weeks": [
 		{
 			"theme": "Introduction",
