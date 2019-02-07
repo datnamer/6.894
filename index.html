@@ -176,7 +176,8 @@
           <div class="pure-g" property="lectures" mv-multiple>
             <div class="pure-u-2-24" property="date"></div>
             <div class="pure-u-16-24">
-              <p property="title"></p>
+              <p property="title" mv-if="!slides"></p>
+              <a href="" property="slides">[title]</a>
               <ul>
                 <li class="reading" property="readings" mv-multiple>
                   <small mv-if="required = true">REQUIRED</small>
