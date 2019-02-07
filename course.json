@@ -44,7 +44,6 @@
 				{
 					"date": "Mon 2/11",
 					"title": "Data & Image Models",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Chapter 3: The Power of Representation",
@@ -76,7 +75,6 @@
 				{
 					"date": "Wed 2/13",
 					"title": "Visual Encodings with Vega-Lite & Altair",
-					"slides": "",
 					"readings": [
 						{
 							"title": "A Nested Model for Visualization Design and Validation",
@@ -124,14 +122,13 @@
 				{
 					"date": "Tue 2/19",
 					"title": "Case Studies in EDA",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Enterprise Data Analysis and Visualization: An Interview Study",
 							"venue": "IEEE InfoVis",
 							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
 							"year": "2012",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/51851",
 							"required": true
 						},
 						{
@@ -156,7 +153,6 @@
 				{
 					"date": "Wed 2/20",
 					"title": "EDA with Trifacta Wrangler and Tableau",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
@@ -193,7 +189,6 @@
 				{
 					"date": "Mon 2/25",
 					"title": "Effective Visual Encoding",
-					"slides": "",
 					"readings": [
 						{
 							"title": "What Makes a Visualization Memorable?",
@@ -216,7 +211,6 @@
 				{
 					"date": "Wed 2/27",
 					"title": "Guest Lecture: Hendrik Strobelt (MIT-IBM Watson AI Lab). Introduction to D3.js",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Beyond Memorability: Visualization Recognition and Recall",
@@ -248,7 +242,6 @@
 				{
 					"date": "Mon 3/4",
 					"title": "A Tour through the Interaction Zoo",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Direct Manipulation Interfaces",
@@ -270,7 +263,6 @@
 				{
 					"date": "Wed 3/6",
 					"title": "Selections, Signals, and Event Handlers",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Exploring and Finding Information",
@@ -307,14 +299,12 @@
 				{
 					"date": "Mon 3/11",
 					"title": "Designing for Perception",
-					"slides": "",
 					"readings": [],
 					"assignments": []
 				},
 				{
 					"date": "Wed 3/13",
 					"title": "Color",
-					"slides": "",
 					"readings": [
 						{
 							"title": "Color Naming Models for Color Selection, Image Editing and Palette Design",
@@ -357,7 +347,6 @@
 				{
 					"date": "Mon 3/18",
 					"title": "A3 Demos",
-					"slides": "",
 					"readings": [],
 					"assignments": [
 						{
@@ -375,7 +364,6 @@
 				{
 					"date": "Wed 3/20",
 					"title": "A3 Demos",
-					"slides": "",
 					"readings": [],
 					"assignments": []
 				},
