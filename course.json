@@ -155,10 +155,10 @@
 					"title": "EDA with Trifacta Wrangler and Tableau",
 					"readings": [
 						{
-							"title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
-							"venue": "IEEE InfoVis",
-							"authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
-							"year": "2015",
+							"title": "Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases",
+							"venue": "IEEE TVCG",
+							"authors": "Chris Stolte, Diane Tang, and Pat Hanrahan",
+							"year": "2002",
 							"url": " ",
 							"required": true
 						},
@@ -171,10 +171,10 @@
 							"required": false
 						},
 						{
-							"title": "Proactive Wrangling: Mixed-Initiative End-User Programming of Data Transformation Scripts",
-							"venue": "ACM UIST",
-							"authors": "Philip J. Guo, Sean Kandel, Joseph M. Hellerstein, and Jeffrey Heer",
-							"year": "2011",
+							"title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
+							"venue": "IEEE InfoVis",
+							"authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
+							"year": "2015",
 							"url": " ",
 							"required": false
 						}
