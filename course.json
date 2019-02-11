@@ -44,6 +44,7 @@
 				{
 					"date": "Mon 2/11",
 					"title": "Data & Image Models",
+					"slides": "./lectures/02-DataImageModels.pdf",
 					"readings": [
 						{
 							"title": "Chapter 3: The Power of Representation",
