@@ -159,7 +159,7 @@
 							"venue": "IEEE TVCG",
 							"authors": "Chris Stolte, Diane Tang, and Pat Hanrahan",
 							"year": "2002",
-							"url": " ",
+							"url": " http://nb.mit.edu/f/51897",
 							"required": true
 						},
 						{
@@ -167,7 +167,7 @@
 							"venue": "ACM CHI",
 							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
 							"year": "2011",
-							"url": " ",
+							"url": " http://nb.mit.edu/f/51898",
 							"required": false
 						},
 						{
@@ -175,7 +175,7 @@
 							"venue": "IEEE InfoVis",
 							"authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
 							"year": "2015",
-							"url": " ",
+							"url": " http://nb.mit.edu/f/51899",
 							"required": false
 						}
 					],
