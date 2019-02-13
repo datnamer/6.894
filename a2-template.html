@@ -2,6 +2,15 @@
 <html xml:lang="en" lang="en">
 <head>
   <title>6.894 Assignment 2</title>
+
+  <!-- PureCSS Responsive Grid -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
+    <!--<![endif]-->
+
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
       rel="stylesheet">
   <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
@@ -22,16 +31,16 @@ img {
 }
 
 h1, h2, h3, h4, h5 {
-  /*color: #492a7c;*/
   background-color: inherit;
   font-weight: normal;
   padding: 0 0 5px 0;
   margin: 15px 0 0 0;
   border: none;
   clear: right;
+  color: #000;
 }
-h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
-h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h1 { font-size: 2em; margin:  5px 0 10px 0; line-height: 28px; font-weight: bold; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; line-height: 20px;}
 h3 { font-size: 13pt; }
 h4 { font-size: 12pt; }
 h5 { font-size: 11pt; }
@@ -46,7 +55,7 @@ ol { margin: 1em; }
   border:0;
   margin: 0 auto 0 auto;
   padding: 0;
-  width: 840px;
+  width: 950px;
   font-size: 0.95em;
 }
 
@@ -55,19 +64,18 @@ ol { margin: 1em; }
 }
 
 .entry  {
-  border-top: 1px solid #ddd;
   padding-top: 2px;
   margin-top: 3em;
 }
   </style>
 </head>
 
-<body>
+<body class="pure-g">
   <div id="ribbon" class="pure-u-1">
         <div class="red"></div>
         <div class="grey"></div>
       </div>
-<div class='content'>
+  <div class='content pure-u-1'>
 
 <section>
   <h1>Assignment 2: Exploratory Data Analysis</h1>
