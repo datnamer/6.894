@@ -192,12 +192,20 @@
 					"title": "Effective Visual Encoding",
 					"readings": [
 						{
+							"title": "Beyond Memorability: Visualization Recognition and Recall",
+							"venue": "IEEE InfoVis",
+							"authors": "Michelle A. Borkin, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, and Aude Oliva",
+							"year": "2015",
+							"url": " ",
+							"required": true
+						},
+						{
 							"title": "What Makes a Visualization Memorable?",
 							"venue": "IEEE InfoVis",
 							"authors": "Michelle A. Borkin, Azalea A. Vo, Zoya Bylinskii, Phillip Isola, Shashank Sunkavalli, Aude Oliva, and Hanspeter Pfister",
 							"year": "2013",
 							"url": " ",
-							"required": true
+							"required": false
 						},
 						{
 							"title": "39 Studies about Human Perception in 30 Minutes",
@@ -214,10 +222,10 @@
 					"title": "Guest Lecture: Hendrik Strobelt (MIT-IBM Watson AI Lab). Introduction to D3.js",
 					"readings": [
 						{
-							"title": "Beyond Memorability: Visualization Recognition and Recall",
+							"title": "D3: Data-Driven Documents",
 							"venue": "IEEE InfoVis",
-							"authors": "Michelle A. Borkin, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, and Aude Oliva",
-							"year": "2015",
+							"authors": "Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer",
+							"year": "2011",
 							"url": " ",
 							"required": true
 						}
