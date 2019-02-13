@@ -1,0 +1,279 @@
+<!-- Author: Soya Park, soya@mit.edu -->
+<html>
+  <head>  
+    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- PureCSS Responsive Grid -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
+    <!--<![endif]-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="mavo.min.js"></script>
+    <link rel="stylesheet" href="mavo.css">
+    
+    <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="text/javascript">
+      // hide mavo menu when the user is not logged in. 
+      $( document ).ready(function() {
+        $('body').bind("mv-load", function() {  
+          if($(".mv-status").text().includes("Logged in to Github as"))  {
+            $(".mv-bar.mv-ui").show();
+          } else {
+            $(".mv-bar.mv-ui").hide();
+          }
+        });
+
+        if (window.location.hostname === 'vis.csail.mit.edu') {
+          document.body.classList.add("csail-url");
+        }
+      });    
+    </script>
+  </head>
+
+<!-- https://github.com/mitvis/6.894 -->
+  <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
+    <div class="pure-g">
+      <div id="ribbon" class="pure-u-1">
+        <div class="red"></div>
+        <div class="grey"></div>
+      </div>
+
+      <div id="center" class="pure-u-1">
+        <div id="header" class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="wordmark">
+              <a href="../">
+                <div id="logo">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+                  <g>
+                    <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
+                      c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                    <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
+                      c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
+                      c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
+                  </g>
+                  <g>
+                    <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
+                      c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
+                  </g>
+                  <g>
+                    <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
+                      h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
+                  </g>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="../">
+                <h1>
+                  <span class="red">6.894</span>
+                  : Interactive Data Visualization
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="links">
+              <span>
+                <a href="../">Home</a>
+                &middot;
+                <a href="../resources.html">Resources</a>
+                &middot;
+                <a href="https://piazza.com/class/jrc6epsrssu1in">Piazza</a>
+                &middot;
+                <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>
+              </span>
+            </div>
+          </div>
+        </div>
+  
+        <div class='assignment-content'>
+          <section>
+  <h1>Assignment 2 Example</h1>
+
+  <p>
+  This is an example exploratory analysis report intended to give you a sense of the scope of Assignment 2. This particular report concerns a dataset about motion pictures. Note that this analysis is <em>far from perfect</em>. There are interesting follow-up questions the analysis does not pursue, and also fundamental data quality and sample selection (filtering) concerns that are ignored. As you read through, ask yourself what you might do differently!
+  </p>
+</section>
+
+<section>
+  <h2>Dataset: Motion Pictures Data</h2>
+
+  <p>
+  This dataset contains statistics for a sample of 3,201 movies collected in 2010. The data includes movie titles, genres, and box office gross revenues, as well as audience (IMDB) and critic (Rotten Tomatoes) ratings. The dataset combines data from multiple sources: <a href="http://www.rottentomatoes.com/">Rotten Tomatoes</a>, <a href="http://www.the-numbers.com/">The Numbers</a>, and <a href="http://www.imdb.com">IMDB</a>.
+  </p>
+
+  <p>
+    The data is available online as
+    <strong>
+      <a href="http://courses.cs.washington.edu/courses/cse512/data/a2/movies.csv">movies.csv</a>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li><strong>Overarching Question:</strong> What factors drive the box office success of motion pictures?</li>
+    <li>How do films fare in the U.S. vs. worldwide markets?</li>
+    <li>Do producers strategize release dates for certain kinds of films?</li>
+    <li>How do fan favorites and critical darlings relate to ticket sales?</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  Our analysis starts with plots of individual variables to assess distributions and data quality. As we progress, we build up multi-dimensional views for our analysis questions.
+
+  <div class="entry">
+    <img src="01_ReleaseDate.png">
+    <p class="caption">
+    This chart shows the count of movies for each year. The dataset has an uneven distribution, with a long tail of historical films and larger numbers of more recent films (1999-2009). We also see films from the future! These are most likely errors or films in production. As a result, all subsequent views include a filter to remove films with release dates that are either null or have years after 2010 (the publication date of this dataset.)
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="02_Genre.png">
+    <p class="caption">
+    Next, we look at the number of movies by genre, sorted by count. We see that Drama is the most prevalent, followed by Comedy, Action and Adventure. Some of the categories have many fewer films (less than 100) and so due to sampling error may not be as reliable for assessing overall trends. We also see a "Null" category for (presumably) uncategorized films.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="03_GenreGrouped.png">
+    <p class="caption">
+    In order to simplify subsequent analyses and ensure a minimum sample size (&gt; 100) per genre, we adjust the genre taxonomy by grouping them together. Here, Comedy and Black Comedy have been merged together, while the Null genre and all other groups with less than 100 films have been combined into a new "Other" category.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="04_US_WW_Gross.png">
+    <p class="caption">
+    We now turn to looking at measures of a films' box office success. Our dataset contains both US Gross and Worldwide Gross fields. As the worldwide results should contain the US results, we first create a new variable that subtracts the US figures from the worldwide result.
+    </p>
+    <p class="caption">
+    This plot shows a scatter plot (with log base 10 scaled axes) comparing those two. We can see that by and large US gross and Worldwide (minus US) gross follow similar patterns. Based on this high level of association, we will largely focus on US gross in subsequent plots.
+    </p>
+    <p class="caption">
+    On the edges of the distributions we find films that are either popular in the US but less so elsewhere (or vice versa). High-grossing films in the US (but not elsewhere) include the Barbershop films and Bad Santa. High-grossing films outside the US unsurprisingly consist of foreign-made films. And a few films are not popular anywhere... :)
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="05_USGross_Genre.png">
+    <p class="caption">
+    This log-scaled dot plot shows the distribution of US gross by genre. Each film is included, along with reference lines for the interquartile range (middle 50% of the data, in grey) and median values (in red). We see that, on median, Adventure films have the greatest revenue, followed by Action films. Next, comedies (both romantic and otherwise), Thrillers, and Horror films show similar central tendencies.
+    </p>
+    <p class="caption">
+    We also note differences in the tails of the distribution, as some genres have a larger proportion of films with very low US gross. For example, the Other category – which includes documentaries and concert films – fits this pattern.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="06_Genre_USGrossHist.png">
+    <p class="caption">
+    This plot shows an alternative view of the previous chart, but showing a normalized histogram to give a better sense of the shape of the per-genre probability densities for US revenue. The y-axis shows the total percentage of records (within that genre) occurring within a given bin.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="07_USGross_Quarter.png">
+    <p class="caption">
+    We now move on to examine seasonal patterns. This plot shows the percentage of US gross for films released in each financial quarter, subdivided by genre. The genres have been sorted by peak release season. We see that Comedy proceeds are largely steady throughout the year. Action and Adventure films peak in the spring and early summer, whereas Thriller/Suspense films peak in the late summer. Horror movies peak in Q4 (perhaps around Halloween?) and Dramas also peak in Q4 (released in time for Oscar consideration?). The Other category also peaks in Q4, perhaps with musicals or concert films targeting a holiday release?
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="08_WWGross_Quarter.png">
+    <p class="caption">
+    Do worldwide trends match the US trends? This plot is identical to the prior chart, but with US gross replaced by Worldwise (minus US) gross. We see very similar patterns as before.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="09_IMDB.png">
+    <p class="caption">
+    Having investigated the relationship between ticket sales and genre, we now turn our attention to incorporating ratings. This plot shows a histogram of IMDB user ratings. We see a positively-skewed bell curve shape with, a modal rating around 6.5. This is higher than neutral: is this because people in general like movies, or is there sample bias in the data? We also see a number of "null" ratings, for which we are missing data.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="10_RottenTomatoes.png">
+    <p class="caption">
+    This plot shows a histogram of critic ratings from the site Rotten Tomatoes. Similar to the IMDB ratings, there are a number of "null" (missing) values. Unlike the bell-curve shape of IMDB ratings, the shape of Rotten Tomatoes ratings indicates a more uniform distribution. This discrepancy may be due to the different mechanisms: IMDB simply aggregates user ratings on a 1-10 scale, while Rotten Tomatoes shows the 0-100 percentage of thumbs-up reviews (i.e., like coin tosses) from a collection of critics.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="11_Ratings.png">
+    <p class="caption">
+    This scatter plot compares the IMDB and Rotten Tomatoes ratings directly. We see that the two are highly correlated (an observation supported by the least-squares regression trend line). Films popular in one system tend to be popular in the other, notably including The Godfather, which has the highest score in both sets of ratings. However, we can also find bivariate outliers that are popular with users but not critics (or vice versa). For example Aeon Flux is popular among viewers but not critics. Meanwhile, Panic is rated highly by critics but unloved by viewers.
+    </p>
+    <p class="caption">
+    For context, we also include films that have a null score in one of the rating sets in gray along the edges of the chart.
+    </p>
+  </div>
+
+  <div class="entry">
+    <img src="12_USGross_Ratings.png">
+    <p class="caption">
+    Now we explore our final question: does the "quality" of a film (as reflected by its ratings) affect the box office ticket sales. To address this question, this visualization consists of two side-by-side scatter plots, showing the relationship between either IMDB and Rotten Tomatoes ratings and US gross. We also include trend lines, fitted with an exponential model to account for the log-scaled axis for US gross. Both the plots and the trend line indicate a positive relationship (higher ratings, higher gross on average), but with a very shallow slope.
+    </p>
+  </div>
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+    The take-away? Better films do seem to make more money, but the effect is weak. Perhaps this is a function of a Hollywood strategy of pre-release marketing to hype up a film before word-of-mouth spreads? So while studios might strive to make great films, it seems that other, more easily controlled, factors such as genre and release schedule might lead to more reliable projections of future ticket sales.
+    </p>
+  </div>
+
+</section>
+        </div>
+
+      </div>
+    </div>  
+  </body>
+</html>
