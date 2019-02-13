@@ -1,135 +1,83 @@
-<!-- Author: Soya Park, soya@mit.edu -->
-<html>
-  <head>  
-    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-    <!-- PureCSS Responsive Grid -->
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>6.894 Assignment 2</title>
+
+  <!-- PureCSS Responsive Grid -->
     <!--[if lte IE 8]>
       <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
     <![endif]-->
     <!--[if gt IE 8]><!-->
       <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
     <!--<![endif]-->
-    
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
       rel="stylesheet">
+  <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="mavo.min.js"></script>
-    <link rel="stylesheet" href="mavo.css">
-    
-    <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
-    <link rel="stylesheet" href="../style.css">
+  <style>
+* { padding: 0; margin: 0; }
 
-    <script type="text/javascript">
-      // hide mavo menu when the user is not logged in. 
-      $( document ).ready(function() {
-        $('body').bind("mv-load", function() {  
-          if($(".mv-status").text().includes("Logged in to Github as"))  {
-            $(".mv-bar.mv-ui").show();
-          } else {
-            $(".mv-bar.mv-ui").hide();
-          }
-        });
 
-        if (window.location.hostname === 'vis.csail.mit.edu') {
-          document.body.classList.add("csail-url");
-        }
-      });    
-    </script>
-  </head>
+a {
+  color: #A31F34;
+  font-weight: 400;
+}
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
 
-<!-- https://github.com/mitvis/6.894 -->
-  <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
-    <div class="pure-g">
-      <div id="ribbon" class="pure-u-1">
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+  color: #000;
+}
+h1 { font-size: 2em; margin:  5px 0 10px 0; line-height: 28px; font-weight: bold; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  /*margin: 0;*/
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border:0;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 950px;
+  font-size: 0.95em;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body class="pure-g">
+  <div id="ribbon" class="pure-u-1">
         <div class="red"></div>
         <div class="grey"></div>
       </div>
+  <div class='content pure-u-1'>
 
-      <div id="center" class="pure-u-1">
-        <div id="header" class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2">
-            <div id="wordmark">
-              <a href="../">
-                <div id="logo">
-                  <!--?xml version="1.0" encoding="utf-8"?-->
-                  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                  
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
-                  <g>
-                    <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
-                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
-                  </g>
-                  <g>
-                    <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
-                      c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
-                  </g>
-                  <g>
-                    <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
-                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
-                  </g>
-                  <g>
-                    <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
-                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
-                    <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
-                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
-                  </g>
-                  <g>
-                    <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
-                      c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
-                  </g>
-                  <g>
-                    <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
-                      c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
-                  </g>
-                  <g>
-                    <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
-                      c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
-                  </g>
-                  <g>
-                    <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
-                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
-                  </g>
-                  <g>
-                    <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
-                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
-                  </g>
-                  <g>
-                    <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
-                      h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
-                  </g>
-                  </svg>
-                </div>
-              </a>
-
-              <a href="../">
-                <h1>
-                  <span class="red">6.894</span>
-                  : Interactive Data Visualization
-                </h1>
-              </a>
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2">
-            <div id="links">
-              <span>
-                <a href="../">Home</a>
-                &middot;
-                <a href="../resources.html">Resources</a>
-                &middot;
-                <a href="https://piazza.com/class/jrc6epsrssu1in">Piazza</a>
-                &middot;
-                <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>
-              </span>
-            </div>
-          </div>
-        </div>
-  
-        <div class='assignment-content'>
-          <section>
+<section>
   <h1>Assignment 2 Example</h1>
 
   <p>
@@ -271,9 +219,7 @@
   </div>
 
 </section>
-        </div>
 
-      </div>
-    </div>  
-  </body>
+</div>
+</body>
 </html>
