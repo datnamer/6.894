@@ -123,7 +123,8 @@
 			"lectures": [
 				{
 					"date": "Tue 2/19",
-					"title": "Case Studies in EDA",
+					"title": "Case Studies in Exploratory Data Analysis",
+					"slides": "./lectures/03-EDA.pdf",
 					"readings": [
 						{
 							"title": "Enterprise Data Analysis and Visualization: An Interview Study",
@@ -154,7 +155,8 @@
 				},
 				{
 					"date": "Wed 2/20",
-					"title": "EDA with Trifacta Wrangler and Tableau",
+					"title": "Exploratory Visual Analysis with Tableau",
+					"slides": "https://docs.google.com/document/d/12TCwKEtIWmUWeS3SIWd57K1PzKBCK5p2n8s5du_gdJc/edit",
 					"readings": [
 						{
 							"title": "Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases",
