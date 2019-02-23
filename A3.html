@@ -1,0 +1,227 @@
+<html>
+  <head>  
+    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- PureCSS Responsive Grid -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
+    <!--<![endif]-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="mavo.min.js"></script>
+    <link rel="stylesheet" href="mavo.css">
+    
+    <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+      // hide mavo menu when the user is not logged in. 
+      $( document ).ready(function() {
+        $('body').bind("mv-load", function() {  
+          if($(".mv-status").text().includes("Logged in to Github as"))  {
+            $(".mv-bar.mv-ui").show();
+          } else {
+            $(".mv-bar.mv-ui").hide();
+          }
+        });
+
+        if (window.location.hostname === 'vis.csail.mit.edu') {
+          document.body.classList.add("csail-url");
+        }
+      });    
+    </script>
+  </head>
+
+<!-- https://github.com/mitvis/6.894 -->
+  <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
+    <div class="pure-g">
+      <div id="ribbon" class="pure-u-1">
+        <div class="red"></div>
+        <div class="grey"></div>
+      </div>
+
+      <div id="center" class="pure-u-1">
+        <div id="header" class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="wordmark">
+              <a href="/">
+                <div id="logo">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+                  <g>
+                    <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
+                      c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                    <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
+                      c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
+                      c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
+                  </g>
+                  <g>
+                    <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
+                      c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
+                  </g>
+                  <g>
+                    <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
+                      h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
+                  </g>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="./">
+                <h1>
+                  <span class="red">6.894</span>
+                  : Interactive Data Visualization
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="links">
+              <span>
+                <a href="./">Home</a>
+                &middot;
+                <a href="./resources.html">Resources</a>
+                &middot;
+                <a href="https://piazza.com/class/jrc6epsrssu1in">Piazza</a>
+                &middot;
+                <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>
+              </span>
+            </div>
+          </div>
+        </div>
+  
+        <section>
+        <h1>Assignment 3: Interactive Visualization</h1>
+        <p>
+          For this assignment, you will explore the issues involved in implementing interactive visualizations. You will build a visualization that enables interactive exploration of a dataset of your own choosing and deploy it on the web.
+        </p>
+        <p>
+          One goal of this assignment is to gain familiarity implementing interaction techniques for visualizations. For example, the <a href="http://benfry.com/zipdecode/">zipdecode</a> and <a href="http://www.babynamewizard.com/voyager">NameVoyager</a> applications shown in class apply the interactive technique of <em>dynamic queries</em> – first explored in the <a href="http://www.cs.umd.edu/hcil/spotfire/">HomeFinder</a> application – to the problem of uncovering patterns in zip codes and baby names. Similarly, <a href="http://www.cs.umd.edu/hcil/treemap/">treemaps</a> were originally developed to display hierarchical file structure, and were later adapted to the problem of interactively depicting a <a href="http://www.bewitched.com/marketmap.html">map of the stock market</a>. We have seen many other examples of interactive visualization techniques in class and in the readings. The goal with this assignment is not only for you to gain hands-on implementation experience, but also for you to think about the effectiveness of the specific techniques for your chosen data domain.
+        </p>
+        <p>
+          One challenge is to scope the assignment so that you can finish it within two weeks. Focus on designing a limited yet compelling visualization that enables interactive exploration along a few critical dimensions. The <a href="http://www.babynamewizard.com/voyager">NameVoyager</a> application is a nice example that uses a simple but elegant interaction design to enable engaging explorations. A tightly-focused, well-implemented interactive graphic is much preferred to a sprawling design that attempts too much!
+        </p>
+      </section>
+
+      <section>
+        <h2>Team Registration</h2>
+        <p>
+          For this assignment you should work in <strong>teams of 3-4 students</strong>. You should attempt to find project partners that you will continue to work with for the final project.
+        </p>
+        <p>
+          As soon as you have formed a team and chosen a dataset, you must submit a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWnI5YiMEpKclQyvDYqk2LM8QHg1Rcb7ascXNtlpuBYvXiCg/viewform?usp=sf_link">team registration form</a>. Your form must include the names, UW email addresses, and GitHub usernames of each team member, along with a concise title for your interactive visualization. If you are looking for project partners, please post to Piazza to find classmates with similar interests! You should submit your team registration by <strong>Mon 3/4, noon</strong>.
+        </p>
+        <p>
+          After the proposal deadline, we will assign your team a repository in the <a href="https://github.com/mitvis">MIT Vis GitHub Organization</a>. We will name your repository based on the visualization title you provide in your registration form (so choose wisely!). See below for details about what your repository must contain at submission time.
+        </p>
+      </section>
+
+      <section>
+        <h2>Deliverables</h2>
+        <p>
+          Design an interactive graphic aimed at enabling understanding of a compelling question for a dataset of your own choosing. In order to determine what subset of the data and which interactive options are most promising, you may want to perform additional exploratory analysis. What aspects of the data reveal the most interesting discoveries or stories? Do not feel obligated to try to convey <em>everything</em> about the data: focus on a compelling subset.
+        </p>
+        <p>
+          Your graphic must include interactions that enable exploration. Possible techniques include panning, zooming, brushing, details-on-demand (e.g., tooltips), dynamic query filters, and selecting different measures to display. You are free to also consider highlights, annotations, or other narrative features intended to draw attention to particular items of interest and provide additional context.
+        </p>
+        <p>
+          Implement your interactive graphic and deploy it to the web. We expect most students will use D3.js for this assignment; however, you are free to use other web-based libraries in addition to or instead of D3. Your graphic should not require customized server-side support; you should simply load data from a static data file or public web API.
+        </p>
+        <p>
+          You should use <a href="https://help.github.com/articles/user-organization-and-project-pages/#project-pages">GitHub pages to host your visualization</a> from your project repository. We recommend keeping everything (development files and website) in your master branch: either serve your website from the root folder or from the "/docs" folder. Your repo must also contain the (unobfuscated) source code for your visualization.
+        </p>
+        <p>
+          Your deployed webpage should also include a write-up with the following components:
+          </p><ul>
+            <li>
+              A rationale for your design decisions. How did you choose your particular visual encodings and interaction techniques? What alternatives did you consider and how did you arrive at your ultimate choices?
+            </li>
+            <li>
+              An overview of your development process. Describe how the work was split among the team members. Include a commentary on the development process, including answers to the following questions: Roughly how much time did you spend developing your application (in people-hours)? What aspects took the most time?
+            </li>
+          </ul>
+        <p></p>
+      </section>
+
+      <section>
+        <h2>Grading Criteria</h2>
+        <p>
+          Projects that squarely meet the requirements for the assignment will receive a score of 9 (A). Going beyond the call of duty can net additional points, for example:
+          </p><ul>
+            <li>advanced interaction techniques</li>
+            <li>novel visualization elements</li>
+            <li>effective multi-view coordination</li>
+            <li>thoughtful and elegant graphic design</li>
+            <li>insightful &amp; engaging exploration experience</li>
+          </ul>
+        <p></p>
+        <p>
+          Point deductions will be made when projects suffer from:
+          </p><ul>
+            <li>errors or broken features</li>
+            <li>clearly ineffective visual encodings</li>
+            <li>confusing interface design or unhelpful interactions</li>
+            <li>lack of exploratory interaction techniques</li>
+            <li>incomplete or insufficient write-up</li>
+          </ul>
+        <p></p>
+      </section>
+
+        <section>
+          <h2>Submission Details</h2>
+
+          <p>
+            Submit your <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWnI5YiMEpKclQyvDYqk2LM8QHg1Rcb7ascXNtlpuBYvXiCg/viewform?usp=sf_link">team registration form</a> by <strong>Mon 3/4, noon</strong>.
+          </p>
+
+          <p>
+            You must have a working prototype online by <strong>Wed 3/13, noon</strong>. Your prototype should be accessible on GitHub pages using a URL of the form:<br>
+            <tt>https://mitvis.github.io/YOUR-A3-PROJECT-NAME/</tt>
+          </p>
+
+          <p>
+            In addition, you must submit the URL for your prototype on <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>.
+          </p>
+        </section>
+
+      </div>
+    </div>  
+  </body>
+</html>
