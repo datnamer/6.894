@@ -260,7 +260,7 @@
 							"authors": "Edwin L. Hutchins, James D. Hollan, Donald A. Norman",
 							"venue": "Human-Computer Interaction 1(4)",
 							"year": "1985",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52232",
 							"required": true
 						}
 					],
@@ -289,7 +289,7 @@
 							"authors": "Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, and Jeffrey Heer",
 							"venue": "IEEE InfoVis",
 							"year": "2016",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52237",
 							"required": false
 						},
 						{
@@ -297,7 +297,7 @@
 							"authors": "Arvind Satyanarayan, Kanit Wongsuphasawat, and Jeffrey Heer",
 							"venue": "ACM UIST",
 							"year": "2014",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52238",
 							"required": false
 						}
 					],
