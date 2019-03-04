@@ -323,7 +323,7 @@
 							"authors": "Jeffrey Heer and Maureen Stone",
 							"venue": "ACM CHI",
 							"year": "2012",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52358",
 							"required": true
 						},
 						{
@@ -331,7 +331,7 @@
 							"authors": "Yang Liu and Jeffrey Heer",
 							"venue": "ACM CHI",
 							"year": "2018",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52357",
 							"required": false
 						},
 						{
@@ -339,7 +339,7 @@
 							"authors": "Connor Gramazio, David Laidlaw, and Karen Schloss",
 							"venue": "IEEE InfoVis",
 							"year": "2017",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52356 ",
 							"required": false
 						}
 					],
