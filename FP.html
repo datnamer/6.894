@@ -1,0 +1,281 @@
+<html>
+  <head>  
+    <title>6.894: Interactive Data Visualization (Spring 2019)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <!-- PureCSS Responsive Grid -->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(grids-min.css+grids-responsive-old-ie-min.css)" />
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.6.0(base-min.css+grids-min.css+grids-responsive-min.css)" />
+    <!--<![endif]-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,700|Alegreya+Sans:300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="mavo.min.js"></script>
+    <link rel="stylesheet" href="mavo.css">
+    
+    <link rel="stylesheet" href="http://vis.mit.edu/styles.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+      // hide mavo menu when the user is not logged in. 
+      $( document ).ready(function() {
+        $('body').bind("mv-load", function() {  
+          if($(".mv-status").text().includes("Logged in to Github as"))  {
+            $(".mv-bar.mv-ui").show();
+          } else {
+            $(".mv-bar.mv-ui").hide();
+          }
+        });
+
+        if (window.location.hostname === 'vis.csail.mit.edu') {
+          document.body.classList.add("csail-url");
+        }
+      });    
+    </script>
+  </head>
+
+<!-- https://github.com/mitvis/6.894 -->
+  <body mv-app="course" mv-app='read edit' mv-storage="https://github.com/mitvis/6.894">
+    <div class="pure-g">
+      <div id="ribbon" class="pure-u-1">
+        <div class="red"></div>
+        <div class="grey"></div>
+      </div>
+
+      <div id="center" class="pure-u-1">
+        <div id="header" class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="wordmark">
+              <a href="/">
+                <div id="logo">
+                  <!--?xml version="1.0" encoding="utf-8"?-->
+                  <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="80px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+                  <g>
+                    <path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path d="M323.543,414.64c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-13.954
+                      c0-1.027-0.833-1.859-1.86-1.859h-13.954c-1.027,0-1.86,0.832-1.86,1.859V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M340.287,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.028,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
+                      h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z"></path>
+                  </g>
+                  <g>
+                    <path id="logo-i-fill" fill="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                    <path id="logo-i-stroke" fill="none" stroke="#A0223A" d="M369.589,414.64c0,1.027,0.833,1.86,1.861,1.86h13.953c1.027,0,1.86-0.833,1.86-1.86v-47.442
+                      c0-1.027-0.833-1.86-1.86-1.86H371.45c-1.028,0-1.861,0.833-1.861,1.86V414.64z"></path>
+                  </g>
+                  <g>
+                    <path d="M370.055,352.314c0,1.028,0.833,1.86,1.86,1.86h13.953c1.028,0,1.861-0.833,1.861-1.86V338.36
+                      c0-1.027-0.833-1.86-1.861-1.86h-13.953c-1.027,0-1.86,0.833-1.86,1.86V352.314z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,376.965c0,1.028,0.833,1.861,1.86,1.861h47.442c1.027,0,1.86-0.833,1.86-1.861v-9.767
+                      c0-1.027-0.833-1.86-1.86-1.86h-47.442c-1.027,0-1.86,0.833-1.86,1.86V376.965z"></path>
+                  </g>
+                  <g>
+                    <path d="M417.729,395.803c0,1.027,0.833,1.859,1.86,1.859h9.768c1.027,0,1.86-0.832,1.86-1.859v-9.768
+                      c0-1.027-0.833-1.861-1.86-1.861h-9.768c-1.027,0-1.86,0.834-1.86,1.861V395.803z"></path>
+                  </g>
+                  <g>
+                    <path d="M436.566,406.268c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-7.675c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V406.268z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,383.244c0,1.027,0.833,1.86,1.86,1.86h9.768c1.027,0,1.86-0.833,1.86-1.86v-5.582c0-1.027-0.833-1.86-1.86-1.86
+                      h-9.768c-1.027,0-1.86,0.833-1.86,1.86V383.244z"></path>
+                  </g>
+                  <g>
+                    <path d="M398.892,414.64c0,1.027,0.833,1.86,1.86,1.86h47.442c1.027,0,1.86-0.833,1.86-1.86v-9.768c0-1.027-0.833-1.86-1.86-1.86
+                      h-47.442c-1.027,0-1.86,0.833-1.86,1.86V414.64z"></path>
+                  </g>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="./">
+                <h1>
+                  <span class="red">6.894</span>
+                  : Interactive Data Visualization
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div id="links">
+              <span>
+                <a href="./">Home</a>
+                &middot;
+                <a href="./resources.html">Resources</a>
+                &middot;
+                <a href="https://piazza.com/class/jrc6epsrssu1in">Piazza</a>
+                &middot;
+                <a href="https://stellar.mit.edu/S/course/6/sp19/6.894/">Stellar/LMOD</a>
+              </span>
+            </div>
+          </div>
+        </div>
+  
+              <section>
+        <h1>Final Project</h1>
+        <p>
+          The purpose of the final project is to provide hands-on experience designing, implementing, and evaluating a visualization method, algorithm or tool. Projects will be carried out by a teams of 1-5 people. Your project should address a concrete visualization problem and propose a novel, creative solution. The final deliverable will be an implementation of the proposed solution and a paper written in the format of a conference paper submission. Though the majority of projects concern the development of a software artifact, design studies or evaluations of visualization techniques may also be acceptable projects — please talk to the course staff if you have questions.
+        </p>
+        <p>
+          In addition, you will be responsible for participating in a design review and presenting your final results. At the end of the quarter we will have a public showcase for you to share your work with both your colleagues and invited guests.
+        </p>
+        <p>
+          Prior to starting your project, it is helpful to gain a sense of what goes into formulating a successful visualization project and to beware of common pitfalls. We encourage you to read <a href="http://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/NestedModel.pdf">A Nested Model for Visualization Design and Validation</a> by Tamara Munzner. This paper is required reading later in the course, so you might as well get a head start!
+        </p>
+      </section>
+
+      <section>
+        <h2>Deliverables/Schedule</h2>
+        <ul>
+          <li>
+            <a href="#proposal">Team Registration &amp; Project Proposal</a> &nbsp; <b>due 4/3 noon</b>
+          </li>
+          <li>
+            <a href="#review">Milestone Review</a> &nbsp; <b></b>
+            (Review meetings <b>4/17</b>)
+          </li>
+          <li>
+            <a href="#final">Final Project Deliverables</a> &nbsp; <b>due 4/22 noon</b>
+          </li>
+          <li>
+            <a href="#poster">Final Project Poster Presentation</a> &nbsp; <b>5/13</b>
+          </li>
+      </ul></section>
+
+      <section>
+        <section id="proposal">
+          <h2>Team Registration &amp; Project Proposal</h2>
+          <p>
+            The proposal should include the names of the members of your group and a short (1 to 2 paragraph) description of the visualization problem you plan to address.
+          </p>
+          <p>
+            <a href="https://goo.gl/forms/jdxY6buDXXyUijHh2">Register your team in our Google Docs form.</a>
+            Similar to A3, we will use form responses to generate GitHub teams and repos for final submissions.
+            Unless granted instructor permission, you may <b>not</b> work in groups larger than 4 people.
+            If you are looking for project partners, please post to Piazza!
+          </p>
+          <p>
+            After the proposal deadline, we will add you to a team and create a repository in which you should put your code, project page, readme and final submission.
+          </p>
+        </section>
+
+        <section id="review">
+          <h2>Milestone Review</h2>
+          <p>
+            Develop an initial prototype of your project and publish your work in your GitHub repo. If applicable, publish any web-based visualizations using GitHub pages, similar to A3. Your work will be reviewed by the course staff to provide feedback on your designs and progress. It is fine if your project is not yet in a "complete" state; however, by this point you should have made substantive progress, including working (if rough) prototypes of your main visualizations and interactions.
+          </p>
+          <p>
+            Your milestone materials should be pushed to GitHub by <b>4/17 noon</b>. Our class sessions on Wed 4/17 will be used for design review appointments between your teams and the course staff.
+          </p>
+        </section>
+
+        <section id="final">
+          <h2>Final Deliverables</h2>
+          <p>
+            Submit final deliverables in your Github Repo by <b>4/22 noon</b>.
+          </p>
+          <p>
+            The final deliverables include:
+          </p>
+          <ul>
+            <li><b>Poster:</b> a PDF file of your poster from the presentation. </li>
+            <li><b>Paper:</b> a 2-4 page paper (not counting references) written in the form of a conference paper submission. The paper should present your goals, related work, a detailed description of your system, and a discussion of your design.</li>
+            <li><b>Project Page:</b> List title, team members, summary image, abstract, link to paper, poster, running instructions for the software and other optional materials. Host the page with Github Pages.</li>
+            <li><b>Readme File:</b> In the repository's <i>readme.md</i>, include a breakdown of how the work was split among the group members and a commentary on the project process.</li>
+            <li><b>Code:</b> an implementation of your system (source code and, if necessary, MacOS executable or build instructions).</li>
+            <li><b>Application:</b> if feasible, publish your visualizations on GitHub pages.</li>
+          </ul>
+
+          <h3>Paper</h3>
+          <p>The final paper should be in the style of a conference paper submission. The paper might include content that is typical of papers that appear at <a href="http://ieeevis.org/">IEEE VIS</a>, or <a href="http://chi2018.acm.org/">CHI</a>. In particular it should contain:</p>
+          <ul>
+            <li><b>Introduction</b> – An explanation of the problem and the motivation for solving it.</li>
+            <li><b>Related Work</b> - A description of prior research or work related to your project.</li>
+            <li><b>Methods</b> – An explanation of the techniques and algorithms you used or developed.</li>
+            <li><b>Results</b> – The visualizations your system produces and any data to help evaluate your approach. For example, you might describe a case study that illustrates how your visualization(s) to address your chosen problem.</li>
+            <li><b>Discussion</b> – What has the audience learned from your work? What new insights or practices has your system enabled? A full blown user study is not expected, but informal observations of use that help evaluate your system are encouraged.</li>
+            <li><b>Future Work</b> – A description of how your system could be extended or refined. We have read papers from a number of conferences throughout the course, but if you are having trouble figuring out how to write your paper, take a look at representative papers from the conferences listed above.</li>
+          </ul>
+          <p>
+            Your final paper should be formatted using the 2 column formatting of papers that appear at IEEE VIS or ACM CHI. Although there are some differences in format between these conferences, you are free to pick from either of these. If you need help finding a formatting template talk to us.
+            <a href="https://chi2018.acm.org/chi-proceedings-format/">Formatting templates for CHI</a> are available online (use the Proceedings format, not the Extended Abstracts format).
+            Your paper should be between 2-4 pages, not counting references. 
+          </p>
+
+          <h3>Code</h3>
+          <p>
+            Your implementation should be able to handle typical data sets for the problem at hand, and run at speed compatible with the intended use (for example interactive visualization should run at interactive frame rates). Developing algorithms that scale to large data sets can be particularly challenging and interesting. However, the project is not a programming contest and mega-lines of code is seldom associated with a good project.
+          </p>
+          <p>
+            We are very flexible about the underlying implementation of your projects. However, we encourage you to use an available visualization toolkit (see <a href="resources.html#tool">Resources</a>) that supports web-based publication. However, software projects must include some new code written by your group. You should not simply use existing software such as Excel, Tableau, Illustrator, etc. to create the visualizations for your final project.
+          </p>
+          <p>
+            Explain how can we run your code in the project page.
+            If your application is web-based, include a URL and if possible publish it using GitHub Pages.
+            Note that GitHub Pages only supports vanilla HTML/CSS/JS; it does not support server-side logic. You will likely need to use another hosting option for your application if you need server-side logic support.
+            If your project is not web-based, provide detailed build and running instructions as needed.
+          </p>
+
+          <h3>Submission</h3>
+          <ul>
+            <li>
+              Put your final paper pdf file and your poster in the <i>final</i> folder in your project repo's master branch.
+            </li>
+            <li>
+              Include a project page on Github Pages (your "docs" folder). Include title, team members, summary image, abstract, link to paper, poster, running instructions for the software and other optional materials. (Or in <i>readme.md</i> if you have privacy concerns.)
+            </li>
+            <li>
+              Include a breakdown of how the work was split among group members and a commentary on the research/development process in the <i>readme.md</i>
+            </li>
+            <li>
+              The final code (and, if not web-based, executable binary) should also be in the default branch.
+              If your visualization is web-based, also publish it online using GitHub pages.
+            </li>
+          </ul>
+        </section>
+
+        <section id="poster">
+          <h2>Final Poster &amp; Demo Presentation</h2>
+          <p>
+            We will hold a public presentation of the final projects on <b>Monday 5/13</b>. The poster session will give you a chance to show off the hard work you put into your project, and to learn about the projects of your peers. Be prepared to give a short presentation (3 min or less) at your poster to both the instructors and visitors. You should include a demo of your project along with the poster. The poster will be considered a final deliverable, so don't forget to apply visualization design principles to your poster as well as your project! The final poster should convey the following information, though you are free to decide the poster layout and headings:
+            </p><ul>
+              <li><b>Problem:</b> A clear statement of the problem your project addresses.</li>
+              <li><b>Motivation:</b> An explanation of why the problem is interesting and important.</li>
+              <li><b>Approach:</b> A description of the techniques or algorithms you used to solve the problem.</li>
+              <li><b>Results:</b> Screenshots and a working demo, and an indication of how they effectively address your problem.</li>
+            </ul>
+          <p></p>
+          <p>
+            <b>Submission:</b> Include a PDF file for your poster in your team's GitHub repo.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h2>Grading</h2>
+        <p>
+          The final project will count for 40% of your final grade in the course. We will consider the novelty of the idea, how it addresses the problem at hand, the methodology you employ in doing the research, and your proficiency in implementing the idea. We will particularly focus on the usefulness of your results, as well as your choice of visualization and interaction design decisions.
+        </p>
+        <p>
+          <b>Please do not submit late!</b>
+        </p>
+      </div>
+    </div>  
+  </body>
+</html>
