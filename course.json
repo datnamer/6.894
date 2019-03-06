@@ -277,6 +277,7 @@
         {
           "date": "Wed 3/6",
           "title": "Selections, Signals, and Event Handlers",
+          "slides": "./lectures/05b-VisToolInteraction",
           "readings": [
             {
               "title": "Exploring and Finding Information",
