@@ -1,629 +1,629 @@
 {
-  "staff": [
-    {
-      "title": "Instructor",
-      "name": "Arvind Satyanarayan",
-      "url": "http://arvindsatya.com",
-      "email": "arvindsatya@mit.edu",
-      "officeHours": "Fri, 10–11am",
-      "location": "32-G706",
-      "img": "arvind.jpg"
-    },
-    {
-      "title": "Assistant",
-      "name": "Soya Park",
-      "url": "http://people.csail.mit.edu/soya/",
-      "email": "soya@mit.edu",
-      "officeHours": "Wed, 4–5pm",
-      "location": "32-G7 Lounge",
-      "img": "soya.JPG"
-    }
-  ],
-  "weeks": [
-    {
-      "theme": "Introduction",
-      "lectures": [
-        {
-          "date": "Wed 2/6",
-          "title": "The Value of Visualization",
-          "slides": "./lectures/01-ValueOfVisualization.pdf",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "A1 (Visualization Design)",
-              "url": "./A1.html",
-              "assigned": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Fundamentals",
-      "lectures": [
-        {
-          "date": "Mon 2/11",
-          "title": "Data & Image Models",
-          "slides": "./lectures/02-DataImageModels.pdf",
-          "readings": [
-            {
-              "title": "Chapter 3: The Power of Representation",
-              "venue": "Things that Make Us Smart",
-              "authors": "Donald A. Norman",
-              "year": "1993",
-              "url": "http://nb.mit.edu/f/51682",
-              "required": true
-            },
-            {
-              "title": "Chapter 1: Information Visualization",
-              "venue": "Readings in Information Visualization",
-              "authors": "Stuart Card, Jock Mackinlay, and Ben Shneiderman",
-              "year": "1999",
-              "url": "http://nb.mit.edu/f/51837",
-              "required": false
-            },
-            {
-              "title": "The Value of Visualization",
-              "venue": "Visualization",
-              "authors": "Jarke van Wijk",
-              "year": "2005",
-              "url": "http://nb.mit.edu/f/51838",
-              "required": false
-            }
-          ],
-          "assignments": []
-        },
-        {
-          "date": "Wed 2/13",
-          "title": "Visual Encodings with Vega-Lite & Altair",
-          "slides": "https://learning-modules.mit.edu/forum/viewtopic.php?f=3071&t=24894&p=36087#p36087",
-          "readings": [
-            {
-              "title": "A Nested Model for Visualization Design and Validation",
-              "venue": "IEEE InfoVis",
-              "authors": "Tamara Munzner",
-              "year": "2009",
-              "url": "http://nb.mit.edu/f/51681",
-              "required": true
-            },
-            {
-              "title": "A Tour through the Visualization Zoo",
-              "venue": "ACM Queue, 8(5)",
-              "authors": "Jeffrey Heer, Michael Bostock, and Vadim Ogievetsky",
-              "year": "2010",
-              "url": "http://nb.mit.edu/f/51839",
-              "required": false
-            },
-            {
-              "title": "Postmortem of an Example",
-              "venue": "Graphics and Graphic Information-Processing",
-              "authors": "Jacques Bertin",
-              "year": "1981",
-              "url": "http://nb.mit.edu/f/51840",
-              "required": false
-            }
-          ],
-          "assignments": [
-            {
-              "name": "A1 (Visualization Design)",
-              "url": "./A1.html",
-              "due": true
-            },
-            {
-              "name": "A2 (Exploratory Analysis)",
-              "url": "./A2.html",
-              "assigned": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Exploratory Data Analysis (EDA)",
-      "lectures": [
-        {
-          "date": "Tue 2/19",
-          "title": "Case Studies in Exploratory Data Analysis",
-          "slides": "./lectures/03-EDA.pdf",
-          "readings": [
-            {
-              "title": "Enterprise Data Analysis and Visualization: An Interview Study",
-              "venue": "IEEE InfoVis",
-              "authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
-              "year": "2012",
-              "url": "http://nb.mit.edu/f/51851",
-              "required": true
-            },
-            {
-              "title": "Research Directions in Data Wrangling: Visualizations and Transformations for Usable and Credible Data",
-              "venue": "Information Visualization 10.4",
-              "authors": "Sean Kandel, Jeffrey Heer, Catherine Plaisant, Jessie Kennedy, Frank van Ham, Nathalie Henry Riche, Chris Weaver, Bongshin Lee, Dominique Brodbeck, and Paolo Buono",
-              "year": "2011",
-              "url": " http://nb.mit.edu/f/51852",
-              "required": false
-            },
-            {
-              "title": "Low-Level Components of Analytic Activity in Information Visualization",
-              "venue": "IEEE InfoVis",
-              "authors": "Robert Amar, James Eagan, and John Stasko",
-              "year": "2005",
-              "url": " http://nb.mit.edu/f/51853",
-              "required": false
-            }
-          ],
-          "assignments": []
-        },
-        {
-          "date": "Wed 2/20",
-          "title": "Exploratory Visual Analysis with Tableau",
-          "slides": "https://docs.google.com/document/d/12TCwKEtIWmUWeS3SIWd57K1PzKBCK5p2n8s5du_gdJc/edit",
-          "readings": [
-            {
-              "title": "Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases",
-              "venue": "IEEE TVCG",
-              "authors": "Chris Stolte, Diane Tang, and Pat Hanrahan",
-              "year": "2002",
-              "url": " http://nb.mit.edu/f/51897",
-              "required": true
-            },
-            {
-              "title": "Wrangler: Interactive Visual Specification of Data Transformation Scripts",
-              "venue": "ACM CHI",
-              "authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
-              "year": "2011",
-              "url": " http://nb.mit.edu/f/51898",
-              "required": false
-            },
-            {
-              "title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
-              "venue": "IEEE InfoVis",
-              "authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
-              "year": "2015",
-              "url": " http://nb.mit.edu/f/51899",
-              "required": false
-            }
-          ],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "Visual Design",
-      "lectures": [
-        {
-          "date": "Mon 2/25",
-          "title": "Effective Visual Encoding & Dark Patterns",
-          "slides": "./lectures/04-VisualEncodingDarkPatterns.pdf",
-          "readings": [
-            {
-              "title": "Beyond Memorability: Visualization Recognition and Recall",
-              "venue": "IEEE InfoVis",
-              "authors": "Michelle A. Borkin, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, and Aude Oliva",
-              "year": "2015",
-              "url": "http://nb.mit.edu/f/52059",
-              "required": true
-            },
-            {
-              "title": "What Makes a Visualization Memorable?",
-              "venue": "IEEE InfoVis",
-              "authors": "Michelle A. Borkin, Azalea A. Vo, Zoya Bylinskii, Phillip Isola, Shashank Sunkavalli, Aude Oliva, and Hanspeter Pfister",
-              "year": "2013",
-              "url": "http://nb.mit.edu/f/52060 ",
-              "required": false
-            },
-            {
-              "title": "39 Studies about Human Perception in 30 Minutes",
-              "authors": "Kennedy Elliott",
-              "url": "https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73",
-              "year": "2016",
-              "required": false
-            }
-          ],
-          "assignments": []
-        },
-        {
-          "date": "Wed 2/27",
-          "title": "Guest Lecture: Hendrik Strobelt (MIT-IBM Watson AI Lab). Introduction to D3.js",
-          "readings": [
-            {
-              "title": "D3: Data-Driven Documents",
-              "venue": "IEEE InfoVis",
-              "authors": "Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer",
-              "year": "2011",
-              "url": "http://nb.mit.edu/f/52063",
-              "required": true
-            }
-          ],
-          "assignments": [
-            {
-              "name": "A2 (Exploratory Analysis)",
-              "url": "./A2.html",
-              "due": true
-            },
-            {
-              "name": "A3 (Interactive Visualization Prototype)",
-              "url": "./A3.html",
-              "assigned": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Interaction",
-      "lectures": [
-        {
-          "date": "Mon 3/4",
-          "title": "A Tour through the Interaction Zoo",
-          "slides": "./lectures/05-Interaction.pdf",
-          "readings": [
-            {
-              "title": "Direct Manipulation Interfaces",
-              "authors": "Edwin L. Hutchins, James D. Hollan, Donald A. Norman",
-              "venue": "Human-Computer Interaction 1(4)",
-              "year": "1985",
-              "url": "http://nb.mit.edu/f/52232",
-              "required": true
-            }
-          ],
-          "assignments": [
-            {
-              "name": "A3 Team Registration",
-              "url": "./A3.html",
-              "due": true
-            }
-          ]
-        },
-        {
-          "date": "Wed 3/6",
-          "title": "Selections, Signals, and Event Handlers",
-          "slides": "./lectures/05b-VisToolInteraction",
-          "readings": [
-            {
-              "title": "Exploring and Finding Information",
-              "authors": "Peter Pirolli",
-              "venue": "HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science",
-              "year": "2003",
-              "url": "http://nb.mit.edu/f/52241",
-              "required": true
-            },
-            {
-              "title": "Vega-Lite: A Grammar of Interactive Graphics",
-              "authors": "Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, and Jeffrey Heer",
-              "venue": "IEEE InfoVis",
-              "year": "2016",
-              "url": "http://nb.mit.edu/f/52237",
-              "required": false
-            },
-            {
-              "title": "Declarative Interaction Design for Data Visualization",
-              "authors": "Arvind Satyanarayan, Kanit Wongsuphasawat, and Jeffrey Heer",
-              "venue": "ACM UIST",
-              "year": "2014",
-              "url": "http://nb.mit.edu/f/52238",
-              "required": false
-            }
-          ],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "Perception",
-      "lectures": [
-        {
-          "date": "Mon 3/11",
-          "title": "Designing for Perception",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 3/13",
-          "title": "Color",
-          "readings": [
-            {
-              "title": "Color Naming Models for Color Selection, Image Editing and Palette Design",
-              "authors": "Jeffrey Heer and Maureen Stone",
-              "venue": "ACM CHI",
-              "year": "2012",
-              "url": "http://nb.mit.edu/f/52358",
-              "required": true
-            },
-            {
-              "title": "Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps",
-              "authors": "Yang Liu and Jeffrey Heer",
-              "venue": "ACM CHI",
-              "year": "2018",
-              "url": "http://nb.mit.edu/f/52357",
-              "required": false
-            },
-            {
-              "title": "Colorgorical: Creating Discriminable and Preferable Color Palettes for Information Visualization",
-              "authors": "Connor Gramazio, David Laidlaw, and Karen Schloss",
-              "venue": "IEEE InfoVis",
-              "year": "2017",
-              "url": "http://nb.mit.edu/f/52356 ",
-              "required": false
-            }
-          ],
-          "assignments": [
-            {
-              "name": "A3 (Interactive Visualization Prototype)",
-              "url": "./A3.html",
-              "due": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Assignment 3 Demos",
-      "lectures": [
-        {
-          "date": "Mon 3/18",
-          "title": "A3 Demos",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "A3 Peer Critique",
-              "url": "./A3.html",
-              "assigned": true
-            },
-            {
-              "name": "Final Project",
-              "url": "./FP.html",
-              "assigned": true
-            }
-          ]
-        },
-        {
-          "date": "Wed 3/20",
-          "title": "A3 Demos",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Fri, 3/22",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "A3 Peer Critique",
-              "url": "./A3.html",
-              "due": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Spring Break",
-      "lectures": []
-    },
-    {
-      "theme": "",
-      "lectures": [
-        {
-          "date": "Mon 4/1",
-          "title": "No Class",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 4/3",
-          "title": "Animation",
-          "readings": [
-            {
-              "title": "Animation: Can It Facilitate?",
-              "authors": "Barbara Tversky, Julie Morrison, Mireille Betrancourt",
-              "venue": "International Journal of Human Computer Studies",
-              "year": "2002",
-              "url": " ",
-              "required": true
-            },
-            {
-              "title": "Animated Transitions in Statistical Data Graphics",
-              "authors": "Jeffrey Heer and George Robertson",
-              "venue": "IEEE InfoVis",
-              "year": "2007",
-              "url": " ",
-              "required": false
-            }
-          ],
-          "assignments": [
-            {
-              "name": "Final Project Proposals",
-              "url": "./A3.html",
-              "due": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "Explanatory Visualization",
-      "lectures": [
-        {
-          "date": "Mon 4/8",
-          "title": "Narrative & Beliefs",
-          "readings": [
-            {
-              "title": "Visualization Rhetoric: Framing Effects in Narrative Visualization.",
-              "authors": "Jessica Hullman and Nick Diakopoulos",
-              "venue": "IEEE InfoVis",
-              "year": "2011",
-              "url": " ",
-              "required": true
-            },
-            {
-              "title": "Narrative Visualization: Telling Stories with Data",
-              "authors": "Edward Segel and Jeffrey Heer",
-              "venue": "IEEE InfoVis",
-              "year": "2010",
-              "url": " ",
-              "required": false
-            },
-            {
-              "title": "Data Through Others’ Eyes: The Impact of Visualizing Others' Expectations on Visualization Interpretation",
-              "authors": "Yea-Seul Kim, Katharina Reinecke, and Jessica Hullman",
-              "venue": "IEEE InfoVis",
-              "year": "2017",
-              "url": " ",
-              "required": false
-            }
-          ],
-          "assignments": []
-        },
-        {
-          "date": "Wed 4/10",
-          "title": "Error & Uncertainty",
-          "readings": [
-            {
-              "title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
-              "authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
-              "venue": "ACM CHI",
-              "year": "2016",
-              "url": " ",
-              "required": true
-            },
-            {
-              "title": "Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error",
-              "authors": "Michael Correll and Michael Gleicher",
-              "venue": "IEEE InfoVis",
-              "year": "2014",
-              "url": " ",
-              "required": false
-            },
-            {
-              "title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
-              "authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
-              "venue": "PLOS ONE",
-              "year": "2015",
-              "url": " ",
-              "required": false
-            }
-          ],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "",
-      "lectures": [
-        {
-          "date": "Mon 4/15",
-          "title": "Patriot's Day – No Class",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 4/17",
-          "title": "Final Project Check-In with Teaching Staff",
-          "readings": [],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "Final Project Presentations",
-      "lectures": [
-        {
-          "date": "Mon 4/22",
-          "title": "Final Project Presentations",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "Final Project Peer Critique",
-              "url": "./FP.html",
-              "assigned": true
-            }
-          ]
-        },
-        {
-          "date": "Wed 4/24",
-          "title": "Final Project Presentations",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Fri 4/26",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "Final Project Peer Critique",
-              "url": "./FP.html",
-              "due": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "theme": "",
-      "lectures": [
-        {
-          "date": "Mon 4/29",
-          "title": "Mapping & Cartography",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 5/1",
-          "title": "Text Visualization",
-          "readings": [
-            {
-              "title": "Guidelines for Effective Usage of Text Highlighting Techniques",
-              "authors": "Hendrik Strobelt, Daniela Oelke, Bum Chul Kwon, Tobias Schreck, and Hanspeter Pfister",
-              "venue": "IEEE InfoVis",
-              "year": "2016",
-              "url": " ",
-              "required": true
-            },
-            {
-              "title": "Mapping Text with Phrase Nets",
-              "authors": "Frank van Ham, Martin Wattenberg & Fernanda Viégas",
-              "venue": "IEEE InfoVis",
-              "year": "2009",
-              "url": " ",
-              "required": false
-            }
-          ],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "",
-      "lectures": [
-        {
-          "date": "Mon 5/6",
-          "title": "Guest Lecture: Sarah Williams (MIT DUSP). Visualization, Urban Planning, and Policy",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 5/1",
-          "title": "No Class",
-          "readings": [],
-          "assignments": []
-        }
-      ]
-    },
-    {
-      "theme": "",
-      "lectures": [
-        {
-          "date": "Mon 5/13",
-          "title": "Final Project Poster Session",
-          "readings": [],
-          "assignments": []
-        },
-        {
-          "date": "Wed 5/15",
-          "title": "Research Frontiers in Interactive Data Visualization",
-          "readings": [],
-          "assignments": []
-        }
-      ]
-    }
-  ]
+	"staff": [
+		{
+			"title": "Instructor",
+			"name": "Arvind Satyanarayan",
+			"url": "http://arvindsatya.com",
+			"email": "arvindsatya@mit.edu",
+			"officeHours": "Fri, 10–11am",
+			"location": "32-G706",
+			"img": "arvind.jpg"
+		},
+		{
+			"title": "Assistant",
+			"name": "Soya Park",
+			"url": "http://people.csail.mit.edu/soya/",
+			"email": "soya@mit.edu",
+			"officeHours": "Wed, 4–5pm",
+			"location": "32-G7 Lounge",
+			"img": "soya.JPG"
+		}
+	],
+	"weeks": [
+		{
+			"theme": "Introduction",
+			"lectures": [
+				{
+					"date": "Wed 2/6",
+					"title": "The Value of Visualization",
+					"slides": "./lectures/01-ValueOfVisualization.pdf",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "A1 (Visualization Design)",
+							"url": "./A1.html",
+							"assigned": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Fundamentals",
+			"lectures": [
+				{
+					"date": "Mon 2/11",
+					"title": "Data & Image Models",
+					"slides": "./lectures/02-DataImageModels.pdf",
+					"readings": [
+						{
+							"title": "Chapter 3: The Power of Representation",
+							"venue": "Things that Make Us Smart",
+							"authors": "Donald A. Norman",
+							"year": "1993",
+							"url": "http://nb.mit.edu/f/51682",
+							"required": true
+						},
+						{
+							"title": "Chapter 1: Information Visualization",
+							"venue": "Readings in Information Visualization",
+							"authors": "Stuart Card, Jock Mackinlay, and Ben Shneiderman",
+							"year": "1999",
+							"url": "http://nb.mit.edu/f/51837",
+							"required": false
+						},
+						{
+							"title": "The Value of Visualization",
+							"venue": "Visualization",
+							"authors": "Jarke van Wijk",
+							"year": "2005",
+							"url": "http://nb.mit.edu/f/51838",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 2/13",
+					"title": "Visual Encodings with Vega-Lite & Altair",
+					"slides": "https://learning-modules.mit.edu/forum/viewtopic.php?f=3071&t=24894&p=36087#p36087",
+					"readings": [
+						{
+							"title": "A Nested Model for Visualization Design and Validation",
+							"venue": "IEEE InfoVis",
+							"authors": "Tamara Munzner",
+							"year": "2009",
+							"url": "http://nb.mit.edu/f/51681",
+							"required": true
+						},
+						{
+							"title": "A Tour through the Visualization Zoo",
+							"venue": "ACM Queue, 8(5)",
+							"authors": "Jeffrey Heer, Michael Bostock, and Vadim Ogievetsky",
+							"year": "2010",
+							"url": "http://nb.mit.edu/f/51839",
+							"required": false
+						},
+						{
+							"title": "Postmortem of an Example",
+							"venue": "Graphics and Graphic Information-Processing",
+							"authors": "Jacques Bertin",
+							"year": "1981",
+							"url": "http://nb.mit.edu/f/51840",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "A1 (Visualization Design)",
+							"url": "./A1.html",
+							"due": true
+						},
+						{
+							"name": "A2 (Exploratory Analysis)",
+							"url": "./A2.html",
+							"assigned": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Exploratory Data Analysis (EDA)",
+			"lectures": [
+				{
+					"date": "Tue 2/19",
+					"title": "Case Studies in Exploratory Data Analysis",
+					"slides": "./lectures/03-EDA.pdf",
+					"readings": [
+						{
+							"title": "Enterprise Data Analysis and Visualization: An Interview Study",
+							"venue": "IEEE InfoVis",
+							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
+							"year": "2012",
+							"url": "http://nb.mit.edu/f/51851",
+							"required": true
+						},
+						{
+							"title": "Research Directions in Data Wrangling: Visualizations and Transformations for Usable and Credible Data",
+							"venue": "Information Visualization 10.4",
+							"authors": "Sean Kandel, Jeffrey Heer, Catherine Plaisant, Jessie Kennedy, Frank van Ham, Nathalie Henry Riche, Chris Weaver, Bongshin Lee, Dominique Brodbeck, and Paolo Buono",
+							"year": "2011",
+							"url": " http://nb.mit.edu/f/51852",
+							"required": false
+						},
+						{
+							"title": "Low-Level Components of Analytic Activity in Information Visualization",
+							"venue": "IEEE InfoVis",
+							"authors": "Robert Amar, James Eagan, and John Stasko",
+							"year": "2005",
+							"url": " http://nb.mit.edu/f/51853",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 2/20",
+					"title": "Exploratory Visual Analysis with Tableau",
+					"slides": "https://docs.google.com/document/d/12TCwKEtIWmUWeS3SIWd57K1PzKBCK5p2n8s5du_gdJc/edit",
+					"readings": [
+						{
+							"title": "Polaris: A System for Query, Analysis and Visualization of Multi-dimensional Relational Databases",
+							"venue": "IEEE TVCG",
+							"authors": "Chris Stolte, Diane Tang, and Pat Hanrahan",
+							"year": "2002",
+							"url": " http://nb.mit.edu/f/51897",
+							"required": true
+						},
+						{
+							"title": "Wrangler: Interactive Visual Specification of Data Transformation Scripts",
+							"venue": "ACM CHI",
+							"authors": "Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer",
+							"year": "2011",
+							"url": " http://nb.mit.edu/f/51898",
+							"required": false
+						},
+						{
+							"title": "Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations",
+							"venue": "IEEE InfoVis",
+							"authors": "Kanit Wongsuphasawat, Dominik Moritz, Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer",
+							"year": "2015",
+							"url": " http://nb.mit.edu/f/51899",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "Visual Design",
+			"lectures": [
+				{
+					"date": "Mon 2/25",
+					"title": "Effective Visual Encoding & Dark Patterns",
+					"slides": "./lectures/04-VisualEncodingDarkPatterns.pdf",
+					"readings": [
+						{
+							"title": "Beyond Memorability: Visualization Recognition and Recall",
+							"venue": "IEEE InfoVis",
+							"authors": "Michelle A. Borkin, Zoya Bylinskii, Nam Wook Kim, Constance May Bainbridge, Chelsea S. Yeh, Daniel Borkin, Hanspeter Pfister, and Aude Oliva",
+							"year": "2015",
+							"url": "http://nb.mit.edu/f/52059",
+							"required": true
+						},
+						{
+							"title": "What Makes a Visualization Memorable?",
+							"venue": "IEEE InfoVis",
+							"authors": "Michelle A. Borkin, Azalea A. Vo, Zoya Bylinskii, Phillip Isola, Shashank Sunkavalli, Aude Oliva, and Hanspeter Pfister",
+							"year": "2013",
+							"url": "http://nb.mit.edu/f/52060 ",
+							"required": false
+						},
+						{
+							"title": "39 Studies about Human Perception in 30 Minutes",
+							"authors": "Kennedy Elliott",
+							"url": "https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73",
+							"year": "2016",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 2/27",
+					"title": "Guest Lecture: Hendrik Strobelt (MIT-IBM Watson AI Lab). Introduction to D3.js",
+					"readings": [
+						{
+							"title": "D3: Data-Driven Documents",
+							"venue": "IEEE InfoVis",
+							"authors": "Michael Bostock, Vadim Ogievetsky, and Jeffrey Heer",
+							"year": "2011",
+							"url": "http://nb.mit.edu/f/52063",
+							"required": true
+						}
+					],
+					"assignments": [
+						{
+							"name": "A2 (Exploratory Analysis)",
+							"url": "./A2.html",
+							"due": true
+						},
+						{
+							"name": "A3 (Interactive Visualization Prototype)",
+							"url": "./A3.html",
+							"assigned": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Interaction",
+			"lectures": [
+				{
+					"date": "Mon 3/4",
+					"title": "A Tour through the Interaction Zoo",
+					"slides": "./lectures/05-Interaction.pdf",
+					"readings": [
+						{
+							"title": "Direct Manipulation Interfaces",
+							"authors": "Edwin L. Hutchins, James D. Hollan, Donald A. Norman",
+							"venue": "Human-Computer Interaction 1(4)",
+							"year": "1985",
+							"url": "http://nb.mit.edu/f/52232",
+							"required": true
+						}
+					],
+					"assignments": [
+						{
+							"name": "A3 Team Registration",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				},
+				{
+					"date": "Wed 3/6",
+					"title": "Selections, Signals, and Event Handlers",
+					"slides": "./lectures/05b-VisToolInteraction",
+					"readings": [
+						{
+							"title": "Exploring and Finding Information",
+							"authors": "Peter Pirolli",
+							"venue": "HCI Models, Theories, and Frameworks: Toward a Multidisciplinary Science",
+							"year": "2003",
+							"url": "http://nb.mit.edu/f/52241",
+							"required": true
+						},
+						{
+							"title": "Vega-Lite: A Grammar of Interactive Graphics",
+							"authors": "Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, and Jeffrey Heer",
+							"venue": "IEEE InfoVis",
+							"year": "2016",
+							"url": "http://nb.mit.edu/f/52237",
+							"required": false
+						},
+						{
+							"title": "Declarative Interaction Design for Data Visualization",
+							"authors": "Arvind Satyanarayan, Kanit Wongsuphasawat, and Jeffrey Heer",
+							"venue": "ACM UIST",
+							"year": "2014",
+							"url": "http://nb.mit.edu/f/52238",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "Perception",
+			"lectures": [
+				{
+					"date": "Mon 3/11",
+					"title": "Designing for Perception",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 3/13",
+					"title": "Color",
+					"readings": [
+						{
+							"title": "Color Naming Models for Color Selection, Image Editing and Palette Design",
+							"authors": "Jeffrey Heer and Maureen Stone",
+							"venue": "ACM CHI",
+							"year": "2012",
+							"url": "http://nb.mit.edu/f/52358",
+							"required": true
+						},
+						{
+							"title": "Somewhere Over the Rainbow: An Empirical Assessment of Quantitative Colormaps",
+							"authors": "Yang Liu and Jeffrey Heer",
+							"venue": "ACM CHI",
+							"year": "2018",
+							"url": "http://nb.mit.edu/f/52357",
+							"required": false
+						},
+						{
+							"title": "Colorgorical: Creating Discriminable and Preferable Color Palettes for Information Visualization",
+							"authors": "Connor Gramazio, David Laidlaw, and Karen Schloss",
+							"venue": "IEEE InfoVis",
+							"year": "2017",
+							"url": "http://nb.mit.edu/f/52356 ",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "A3 (Interactive Visualization Prototype)",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Assignment 3 Demos",
+			"lectures": [
+				{
+					"date": "Mon 3/18",
+					"title": "A3 Demos",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "A3 Peer Critique",
+							"url": "./A3.html",
+							"assigned": true
+						},
+						{
+							"name": "Final Project",
+							"url": "./FP.html",
+							"assigned": true
+						}
+					]
+				},
+				{
+					"date": "Wed 3/20",
+					"title": "A3 Demos",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Fri, 3/22",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "A3 Peer Critique",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Spring Break",
+			"lectures": []
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/1",
+					"title": "No Class",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/3",
+					"title": "Animation",
+					"readings": [
+						{
+							"title": "Animation: Can It Facilitate?",
+							"authors": "Barbara Tversky, Julie Morrison, Mireille Betrancourt",
+							"venue": "International Journal of Human Computer Studies",
+							"year": "2002",
+							"url": "http://nb.mit.edu/f/52515",
+							"required": true
+						},
+						{
+							"title": "Animated Transitions in Statistical Data Graphics",
+							"authors": "Jeffrey Heer and George Robertson",
+							"venue": "IEEE InfoVis",
+							"year": "2007",
+							"url": "http://nb.mit.edu/f/52516",
+							"required": false
+						}
+					],
+					"assignments": [
+						{
+							"name": "Final Project Proposals",
+							"url": "./A3.html",
+							"due": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "Explanatory Visualization",
+			"lectures": [
+				{
+					"date": "Mon 4/8",
+					"title": "Narrative & Beliefs",
+					"readings": [
+						{
+							"title": "Visualization Rhetoric: Framing Effects in Narrative Visualization.",
+							"authors": "Jessica Hullman and Nick Diakopoulos",
+							"venue": "IEEE InfoVis",
+							"year": "2011",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Narrative Visualization: Telling Stories with Data",
+							"authors": "Edward Segel and Jeffrey Heer",
+							"venue": "IEEE InfoVis",
+							"year": "2010",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Data Through Others’ Eyes: The Impact of Visualizing Others' Expectations on Visualization Interpretation",
+							"authors": "Yea-Seul Kim, Katharina Reinecke, and Jessica Hullman",
+							"venue": "IEEE InfoVis",
+							"year": "2017",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/10",
+					"title": "Error & Uncertainty",
+					"readings": [
+						{
+							"title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
+							"authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
+							"venue": "ACM CHI",
+							"year": "2016",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error",
+							"authors": "Michael Correll and Michael Gleicher",
+							"venue": "IEEE InfoVis",
+							"year": "2014",
+							"url": " ",
+							"required": false
+						},
+						{
+							"title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
+							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
+							"venue": "PLOS ONE",
+							"year": "2015",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/15",
+					"title": "Patriot's Day – No Class",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 4/17",
+					"title": "Final Project Check-In with Teaching Staff",
+					"readings": [],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "Final Project Presentations",
+			"lectures": [
+				{
+					"date": "Mon 4/22",
+					"title": "Final Project Presentations",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "Final Project Peer Critique",
+							"url": "./FP.html",
+							"assigned": true
+						}
+					]
+				},
+				{
+					"date": "Wed 4/24",
+					"title": "Final Project Presentations",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Fri 4/26",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "Final Project Peer Critique",
+							"url": "./FP.html",
+							"due": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 4/29",
+					"title": "Mapping & Cartography",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/1",
+					"title": "Text Visualization",
+					"readings": [
+						{
+							"title": "Guidelines for Effective Usage of Text Highlighting Techniques",
+							"authors": "Hendrik Strobelt, Daniela Oelke, Bum Chul Kwon, Tobias Schreck, and Hanspeter Pfister",
+							"venue": "IEEE InfoVis",
+							"year": "2016",
+							"url": " ",
+							"required": true
+						},
+						{
+							"title": "Mapping Text with Phrase Nets",
+							"authors": "Frank van Ham, Martin Wattenberg & Fernanda Viégas",
+							"venue": "IEEE InfoVis",
+							"year": "2009",
+							"url": " ",
+							"required": false
+						}
+					],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 5/6",
+					"title": "Guest Lecture: Sarah Williams (MIT DUSP). Visualization, Urban Planning, and Policy",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/1",
+					"title": "No Class",
+					"readings": [],
+					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "",
+			"lectures": [
+				{
+					"date": "Mon 5/13",
+					"title": "Final Project Poster Session",
+					"readings": [],
+					"assignments": []
+				},
+				{
+					"date": "Wed 5/15",
+					"title": "Research Frontiers in Interactive Data Visualization",
+					"readings": [],
+					"assignments": []
+				}
+			]
+		}
+	]
 }
