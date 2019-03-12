@@ -432,7 +432,7 @@
 					"assignments": [
 						{
 							"name": "Final Project Proposals",
-							"url": "./A3.html",
+							"url": "./FP.html",
 							"due": true
 						}
 					]
@@ -444,6 +444,10 @@
 			"lectures": [
 				{
 					"date": "Mon 4/8",
+					"title": "No Class"
+				},
+				{
+					"date": "Wed 4/10",
 					"title": "Narrative & Beliefs",
 					"readings": [
 						{
@@ -472,9 +476,20 @@
 						}
 					],
 					"assignments": []
+				}
+			]
+		},
+		{
+			"theme": "Error & Uncertainty",
+			"lectures": [
+				{
+					"date": "Mon 4/15",
+					"title": "Patriot's Day – No Class",
+					"readings": [],
+					"assignments": []
 				},
 				{
-					"date": "Wed 4/10",
+					"date": "Wed 4/17",
 					"title": "Error & Uncertainty",
 					"readings": [
 						{
@@ -507,28 +522,11 @@
 			]
 		},
 		{
-			"theme": "",
-			"lectures": [
-				{
-					"date": "Mon 4/15",
-					"title": "Patriot's Day – No Class",
-					"readings": [],
-					"assignments": []
-				},
-				{
-					"date": "Wed 4/17",
-					"title": "Final Project Check-In with Teaching Staff",
-					"readings": [],
-					"assignments": []
-				}
-			]
-		},
-		{
-			"theme": "Final Project Presentations",
+			"theme": "Final Project Milestone Presentations",
 			"lectures": [
 				{
 					"date": "Mon 4/22",
-					"title": "Final Project Presentations",
+					"title": "Final Project Milestone Presentations",
 					"readings": [],
 					"assignments": [
 						{
@@ -540,7 +538,7 @@
 				},
 				{
 					"date": "Wed 4/24",
-					"title": "Final Project Presentations",
+					"title": "Final Project Milestone Presentations",
 					"readings": [],
 					"assignments": []
 				},
