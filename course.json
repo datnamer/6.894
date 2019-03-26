@@ -438,14 +438,19 @@
 							"required": false
 						}
 					],
-					"assignments": [
-						{
-							"name": "Final Project Proposals",
-							"url": "./FP.html",
-							"due": true
-						}
-					]
-				}
+					"assignments": []
+        },
+        {
+          "date": "Fri 4/5",
+          "readings": [],
+          "assignments": [
+            {
+              "name": "Final Project Proposals",
+              "url": "./FP.html",
+              "due": true
+            }
+          ]
+        }
 			]
 		},
 		{
