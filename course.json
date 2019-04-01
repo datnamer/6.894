@@ -439,18 +439,18 @@
 						}
 					],
 					"assignments": []
-        },
-        {
-          "date": "Fri 4/5",
-          "readings": [],
-          "assignments": [
-            {
-              "name": "Final Project Proposals",
-              "url": "./FP.html",
-              "due": true
-            }
-          ]
-        }
+				},
+				{
+					"date": "Fri 4/5",
+					"readings": [],
+					"assignments": [
+						{
+							"name": "Final Project Proposals",
+							"url": "./FP.html",
+							"due": true
+						}
+					]
+				}
 			]
 		},
 		{
@@ -473,7 +473,7 @@
 							"authors": "Jessica Hullman and Nick Diakopoulos",
 							"venue": "IEEE InfoVis",
 							"year": "2011",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52957",
 							"required": true
 						},
 						{
@@ -481,7 +481,7 @@
 							"authors": "Edward Segel and Jeffrey Heer",
 							"venue": "IEEE InfoVis",
 							"year": "2010",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52959",
 							"required": false
 						},
 						{
@@ -489,7 +489,7 @@
 							"authors": "Yea-Seul Kim, Katharina Reinecke, and Jessica Hullman",
 							"venue": "IEEE InfoVis",
 							"year": "2017",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/52958",
 							"required": false
 						}
 					],
