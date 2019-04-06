@@ -420,6 +420,7 @@
 				{
 					"date": "Wed 4/3",
 					"title": "Animation",
+					"slides": "./lectures/08-Animation.pdf",
 					"readings": [
 						{
 							"title": "Animation: Can It Facilitate?",
