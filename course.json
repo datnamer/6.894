@@ -516,7 +516,7 @@
 							"authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
 							"venue": "ACM CHI",
 							"year": "2016",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/53246",
 							"required": true
 						},
 						{
@@ -524,7 +524,7 @@
 							"authors": "Michael Correll and Michael Gleicher",
 							"venue": "IEEE InfoVis",
 							"year": "2014",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/53247",
 							"required": false
 						},
 						{
@@ -532,7 +532,7 @@
 							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
 							"venue": "PLOS ONE",
 							"year": "2015",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/53248",
 							"required": false
 						}
 					],
