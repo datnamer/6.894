@@ -499,7 +499,7 @@
 			]
 		},
 		{
-			"theme": "Error & Uncertainty",
+			"theme": "",
 			"lectures": [
 				{
 					"date": "Mon 4/15",
@@ -509,33 +509,8 @@
 				},
 				{
 					"date": "Wed 4/17",
-					"title": "Error & Uncertainty",
-					"readings": [
-						{
-							"title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
-							"authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
-							"venue": "ACM CHI",
-							"year": "2016",
-							"url": "http://nb.mit.edu/f/53246",
-							"required": true
-						},
-						{
-							"title": "Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error",
-							"authors": "Michael Correll and Michael Gleicher",
-							"venue": "IEEE InfoVis",
-							"year": "2014",
-							"url": "http://nb.mit.edu/f/53247",
-							"required": false
-						},
-						{
-							"title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
-							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
-							"venue": "PLOS ONE",
-							"year": "2015",
-							"url": "http://nb.mit.edu/f/53248",
-							"required": false
-						}
-					],
+					"title": "Final Project Extended Office Hours",
+					"readings": [],
 					"assignments": []
 				}
 			]
@@ -619,8 +594,33 @@
 				},
 				{
 					"date": "Wed 5/8",
-					"title": "Final Project Extended Office Hours",
-					"readings": [],
+					"title": "Error & Uncertainty",
+					"readings": [
+						{
+							"title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
+							"authors": "Matthew Kay, Tara Kola, Jessica R. Hullman, Sean A. Munson",
+							"venue": "ACM CHI",
+							"year": "2016",
+							"url": "http://nb.mit.edu/f/53246",
+							"required": true
+						},
+						{
+							"title": "Error Bars Considered Harmful: Exploring Alternate Encodings for Mean and Error",
+							"authors": "Michael Correll and Michael Gleicher",
+							"venue": "IEEE InfoVis",
+							"year": "2014",
+							"url": "http://nb.mit.edu/f/53247",
+							"required": false
+						},
+						{
+							"title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
+							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
+							"venue": "PLOS ONE",
+							"year": "2015",
+							"url": "http://nb.mit.edu/f/53248",
+							"required": false
+						}
+					],
 					"assignments": []
 				}
 			]
