@@ -467,7 +467,8 @@
 				},
 				{
 					"date": "Wed 4/10",
-					"title": "Narrative & Beliefs",
+					"title": "Narrative Visualization",
+					"slides": "./lectures/09-Narrative.pdf",
 					"readings": [
 						{
 							"title": "Visualization Rhetoric: Framing Effects in Narrative Visualization.",
