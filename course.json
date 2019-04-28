@@ -568,7 +568,7 @@
 							"authors": "Hendrik Strobelt, Daniela Oelke, Bum Chul Kwon, Tobias Schreck, and Hanspeter Pfister",
 							"venue": "IEEE InfoVis",
 							"year": "2016",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/53805",
 							"required": true
 						},
 						{
@@ -576,7 +576,7 @@
 							"authors": "Frank van Ham, Martin Wattenberg & Fernanda Viégas",
 							"venue": "IEEE InfoVis",
 							"year": "2009",
-							"url": " ",
+							"url": "http://nb.mit.edu/f/53806",
 							"required": false
 						}
 					],
