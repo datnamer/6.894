@@ -562,7 +562,8 @@
 				},
 				{
 					"date": "Wed 5/1",
-					"title": "Text Visualization",
+					"title": "Networks & Text",
+					"slides": "./lectures/13b-NetworksText.pdf",
 					"readings": [
 						{
 							"title": "Guidelines for Effective Usage of Text Highlighting Techniques",
