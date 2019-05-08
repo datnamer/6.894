@@ -598,6 +598,7 @@
 				{
 					"date": "Wed 5/8",
 					"title": "Error & Uncertainty",
+					"slides": "./lectures/14-Uncertainty.pdf",
 					"readings": [
 						{
 							"title": "When(ish) is My Bus? User-Centered Visualizations of Uncertainty in Everyday, Mobile Predictive Systems.",
@@ -616,12 +617,18 @@
 							"required": false
 						},
 						{
-							"title": "Hypothetical Outcome Plots Outperform Error Bars and Violin Plots for Inferences About Reliability of Variable Ordering",
-							"authors": "Jessica Hullman, Paul Resnick, and Eytan Adar",
-							"venue": "PLOS ONE",
-							"year": "2015",
-							"url": "http://nb.mit.edu/f/53248",
-							"required": false
+							"title": "Keynote",
+							"authors": "Amanda Cox",
+							"venue": "OpenVis Conf",
+							"year": "2017",
+							"url": "https://www.youtube.com/watch?v=0L1tGo-DvD0"
+						},
+						{
+							"title": "The Visual Uncertainty Experience",
+							"authors": "Jessica Hullman",
+							"venue": "OpenVis Conf",
+							"year": "2016",
+							"url": "https://www.youtube.com/watch?v=pTVAn4oLvbc"
 						}
 					],
 					"assignments": []
